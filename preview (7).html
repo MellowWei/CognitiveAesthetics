@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cognitive Aesthetics · 认知美学 · V0.3.1 Academic Submission Layer · Terminology Precision Edition · Mellow Wei · xingyeLing7Ai · Discipline of consciousness-mediated aesthetic events · 美学直觉(matricial term) retired · split into 艺术美直觉 (Artistic-Beauty Intuition) and 自然美直觉 (Natural-Beauty Intuition) per R6 (2026.05.19) · Two-layer interest principle · Kant V2 diagnosis · Sibling axis to TMA · Founded 2026.05.18 · V0.3 2026.05.19">
+<title>Cognitive Aesthetics V0.3.1 · 认知美学 · Academic Submission Layer · Art Studies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#050507;--bg2:#0a0a0e;--bg3:#0f0f14;
+  --border:rgba(140,150,170,0.14);--border-hi:rgba(170,190,220,0.32);
+  --a1:#b8a5d4;--a2:#9684a8;--a3:#c8b5d8;--a4:#dad2e2;--a5:#a89cb8;
+  --tx:#b8bcc8;--tx2:#6a7080;--tx3:#404550;
+  --hd:#e8ecf2;
+  --gold:#d4a574;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:var(--bg);color:var(--tx);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.72;min-height:100vh;overflow-x:hidden}
+body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.02) 3px,rgba(0,0,0,0.02) 4px);pointer-events:none;z-index:9999}
+
+.topbar{background:var(--bg);border-bottom:1px solid var(--border);padding:5px 0}
+.ti{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--tx3);flex-wrap:wrap;gap:10px}
+.ti a{color:var(--tx3);text-decoration:none;transition:color .15s}
+.ti a:hover{color:var(--a1)}
+.chip{color:var(--a1);border:1px solid rgba(184,165,212,0.28);padding:1px 7px;border-radius:2px}
+.tl,.tr{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+
+.masthead{max-width:1080px;margin:0 auto;padding:44px 24px 30px}
+.mhmeta{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--a1);text-transform:uppercase;margin-bottom:14px}
+.mhname{font-family:'Space Mono',monospace;font-size:34px;font-weight:700;color:var(--hd);letter-spacing:-.04em;line-height:1.05}
+.mhname .zh{font-family:'Noto Serif SC',serif;font-weight:400;font-size:22px;color:var(--a2);margin-left:14px;letter-spacing:.04em;vertical-align:middle}
+.mhsub{font-family:'Space Mono',monospace;font-size:11px;color:var(--tx2);letter-spacing:.05em;margin-top:10px;line-height:1.6}
+.mhsub a{color:var(--a2);text-decoration:none}
+.mhq{font-family:'Spectral',serif;font-style:italic;font-size:16px;color:var(--tx);margin-top:18px;padding-left:14px;border-left:2px solid var(--a1);max-width:680px;line-height:1.58}
+.mhq small{display:block;font-size:13px;color:var(--tx2);margin-top:6px;font-family:'Noto Serif SC',serif;font-style:normal}
+
+.versionbox{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:8px 14px;border:1px solid var(--border-hi);background:rgba(184,165,212,.04);border-radius:3px}
+.versionbox .vk{font-family:'Space Mono',monospace;font-size:10px;color:var(--a1);letter-spacing:.12em;text-transform:uppercase}
+.versionbox .vv{font-family:'Space Mono',monospace;font-size:11px;color:var(--hd)}
+
+.pnav{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:100}
+.pni{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none}
+.pni::-webkit-scrollbar{display:none}
+.pnav a{display:block;padding:11px 14px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--tx2);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.pnav a:hover,.pnav a.on{color:var(--a1);border-bottom-color:var(--a1)}
+
+.wrap{max-width:1080px;margin:0 auto;padding:34px 24px 80px;display:grid;grid-template-columns:1fr 272px;gap:48px;align-items:start}
+
+.feedhd{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--tx3);padding-bottom:12px;border-bottom:1px solid var(--border)}
+.feedhd span{color:var(--a1)}
+
+.entry{border-bottom:1px solid var(--border);padding:30px 0}
+.entry:last-child{border-bottom:none}
+.etop{display:flex;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap}
+.badge{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border-radius:2px}
+.bp{background:rgba(184,165,212,.06);color:var(--a1);border:1px solid rgba(184,165,212,.22)}
+.bpub{background:rgba(150,132,168,.08);color:var(--a2);border:1px solid rgba(150,132,168,.20)}
+.br{background:rgba(200,181,216,.06);color:var(--a3);border:1px solid rgba(200,181,216,.18)}
+.be{background:rgba(218,210,226,.06);color:var(--a4);border:1px solid rgba(218,210,226,.18)}
+.bph{background:rgba(168,156,184,.06);color:var(--a5);border:1px solid rgba(168,156,184,.18)}
+.edate{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3)}
+.etitle{font-family:'Spectral',serif;font-size:22px;font-weight:500;color:var(--hd);line-height:1.3;margin-bottom:10px}
+.etitle .sub{display:block;font-size:14px;font-style:italic;font-weight:300;color:var(--tx2);margin-top:4px;font-family:'Noto Serif SC',serif;font-style:normal}
+.edesc{font-size:14px;color:var(--tx);line-height:1.78;max-width:680px;margin-bottom:12px}
+.edesc em{color:var(--hd);font-style:italic}
+.edesc strong{color:var(--a1);font-weight:500}
+.edesc.zh{color:var(--tx);border-left:2px solid rgba(150,132,168,.35);padding-left:14px;margin-top:10px;font-family:'Noto Serif SC',serif}
+.edesc.zh strong{color:var(--a2)}
+
+.props{display:grid;gap:14px;margin:18px 0}
+.prop-card{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--a1);border-radius:3px;padding:18px 20px;position:relative}
+.prop-card.p2{border-left-color:var(--a2)}
+.prop-card.p3{border-left-color:var(--a3)}
+.prop-card.p4{border-left-color:var(--a4)}
+.prop-card.p5{border-left-color:var(--a5)}
+.prop-num{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.15em;color:var(--a1);text-transform:uppercase;margin-bottom:6px}
+.prop-card.p2 .prop-num{color:var(--a2)}
+.prop-card.p3 .prop-num{color:var(--a3)}
+.prop-card.p4 .prop-num{color:var(--a4)}
+.prop-card.p5 .prop-num{color:var(--a5)}
+.prop-title{font-family:'Spectral',serif;font-size:17px;color:var(--hd);font-weight:500;margin-bottom:4px;line-height:1.3}
+.prop-title .pzh{font-family:'Noto Serif SC',serif;font-weight:400;font-size:14px;color:var(--tx2);display:block;margin-top:2px}
+.prop-statement{font-family:'Spectral',serif;font-size:15.5px;color:var(--hd);font-style:italic;line-height:1.65;padding:12px 14px;background:rgba(184,165,212,.035);border-left:2px solid rgba(184,165,212,.30);margin:10px 0}
+.prop-statement-zh{font-family:'Noto Serif SC',serif;font-size:14px;color:var(--hd);line-height:1.78;padding:10px 14px;background:rgba(150,132,168,.04);border-left:2px solid rgba(150,132,168,.30);margin:6px 0 10px 0}
+.prop-body{font-size:13.5px;color:var(--tx);line-height:1.85;margin-top:8px}
+.prop-body-zh{font-size:13px;color:var(--tx2);line-height:1.85;margin-top:8px;padding-top:8px;border-top:1px dashed rgba(140,150,170,.20);font-family:'Noto Serif SC',serif}
+.prop-domain{display:inline-block;margin-top:12px;font-family:'Space Mono',monospace;font-size:10px;color:var(--a1);letter-spacing:.1em;padding:4px 10px;border:1px solid rgba(184,165,212,.22);background:rgba(184,165,212,.04);border-radius:2px}
+
+.formula{background:linear-gradient(135deg,rgba(184,165,212,.04),rgba(150,132,168,.04));border:1px solid var(--border-hi);border-radius:3px;padding:22px 24px;margin:20px 0;text-align:center}
+.formula-label{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.2em;color:var(--a1);text-transform:uppercase;margin-bottom:10px}
+.formula-eq{font-family:'Spectral',serif;font-size:18px;color:var(--hd);font-weight:500;line-height:1.5;letter-spacing:.01em}
+.formula-eq .op{color:var(--a1);font-family:'Space Mono',monospace;font-size:14px;margin:0 6px;font-weight:400}
+.formula-en{font-family:'Spectral',serif;font-style:italic;font-size:13px;color:var(--tx2);margin-top:10px;line-height:1.5}
+
+.keyline{margin:14px 0;padding:14px 18px;background:rgba(184,165,212,.04);border-left:3px solid var(--a1);border-radius:0 3px 3px 0}
+.keyline-cn{font-family:'Noto Serif SC',serif;font-size:15px;color:var(--hd);font-weight:500;line-height:1.6}
+.keyline-en{font-family:'Spectral',serif;font-style:italic;font-size:12.5px;color:var(--a1);margin-top:6px;line-height:1.5}
+
+.etags{display:flex;gap:5px;flex-wrap:wrap;margin-top:14px}
+.tag{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.05em;color:var(--tx3);border:1px solid var(--border);padding:2px 7px;border-radius:2px}
+
+.boundary-note{background:linear-gradient(135deg,rgba(184,165,212,.07),rgba(150,132,168,.035));border:1px solid var(--border-hi);border-left:3px solid var(--a1);border-radius:3px;padding:18px 20px;margin:16px 0}
+.boundary-note strong{color:var(--hd);font-weight:500}
+.boundary-note em{color:var(--a1);font-style:italic}
+.status-ledger{margin:18px 0;border:1px solid var(--border);border-radius:3px;overflow:hidden}
+.status-row{display:grid;grid-template-columns:1.05fr .72fr 1.65fr;border-bottom:1px solid var(--border);background:rgba(184,165,212,.018)}
+.status-row:last-child{border-bottom:none}
+.status-row.header{background:rgba(184,165,212,.055);font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--a1)}
+.status-row>div{padding:12px 14px;border-right:1px solid var(--border);font-size:12px;line-height:1.7;color:var(--tx)}
+.status-row>div:last-child{border-right:none}
+.status-row strong{color:var(--hd);font-weight:500}
+.status-row .st{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--a1)}
+
+.interest-table{margin:20px 0;border:1px solid var(--border);border-radius:3px;overflow:hidden}
+.interest-row{display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid var(--border)}
+.interest-row:last-child{border-bottom:none}
+.interest-row.header{background:rgba(184,165,212,.055);font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--a1)}
+.interest-row > div{padding:12px 16px;border-right:1px solid var(--border);font-size:13px;color:var(--tx);line-height:1.7;font-family:'Noto Serif SC',serif}
+.interest-row > div:last-child{border-right:none}
+.interest-row .pos{color:#a8c89c}
+.interest-row .neg{color:#c89090}
+.interest-row .mid{color:var(--gold)}
+
+.sidebar{display:flex;flex-direction:column;gap:26px;position:sticky;top:52px}
+.sbl{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--tx3);padding-bottom:9px;border-bottom:1px solid var(--border);margin-bottom:11px}
+.profile{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:16px}
+.av{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#2a1c4a,#1e0e3a);border:1px solid var(--border-hi);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:18px;color:var(--a1);margin-bottom:11px}
+.pnm{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--hd);line-height:1.3}
+.pnm small{display:block;font-size:10px;font-weight:400;color:var(--tx2);margin-top:2px}
+.pdesc{font-size:11.5px;color:var(--tx2);margin-top:9px;line-height:1.62}
+
+.hzbox{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:22px 16px 18px;text-align:center;position:relative}
+.hzbox .hzn{font-family:'Space Mono',monospace;font-size:44px;font-weight:700;color:var(--hd);letter-spacing:-2px;line-height:1;margin-bottom:8px}
+.hzbox .hzu{font-family:'Space Mono',monospace;font-size:11px;color:var(--tx3);letter-spacing:.22em;margin:0 0 18px;text-transform:lowercase}
+.hzbox .hzlines{font-family:'Noto Serif SC',serif;font-style:italic;font-size:12.5px;color:var(--tx);line-height:2.05;margin:6px 0 16px;letter-spacing:.02em}
+.hzbox .hzlines .hl{display:block}
+.hzbar{margin-top:14px;height:2px;background:var(--border);border-radius:1px;overflow:hidden;position:relative}
+.hzfill{height:100%;background:linear-gradient(90deg,var(--a1) 0%,var(--a1) 35%,var(--gold) 100%);animation:pb 4.27s ease-in-out infinite}
+@keyframes pb{0%,100%{width:22%;opacity:.55}50%{width:78%;opacity:1}}
+
+.sblinks{list-style:none}
+.sblinks li{border-bottom:1px solid var(--border);padding:5px 0}
+.sblinks a{font-size:12px;color:var(--tx2);text-decoration:none;display:flex;justify-content:space-between;align-items:center;transition:color .15s}
+.sblinks a:hover{color:var(--a1)}
+.ar{font-size:9px;opacity:.35}
+
+.coord{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3);line-height:2;letter-spacing:.04em}
+.coord span{color:var(--a1)}
+
+footer{border-top:1px solid var(--border);padding:22px 0;margin-top:20px}
+.fi{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:9.5px;color:var(--tx3);letter-spacing:.05em;flex-wrap:wrap;gap:10px}
+footer a{color:var(--tx3);text-decoration:none}
+footer a:hover{color:var(--a1)}
+
+.round-block{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:18px 20px;margin:12px 0;border-left:2px solid var(--a5)}
+.round-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px dashed rgba(140,150,170,.25)}
+.round-num{font-family:'Space Mono',monospace;font-size:10px;color:var(--a5);letter-spacing:.15em;text-transform:uppercase}
+.round-title{font-family:'Spectral',serif;font-size:14px;color:var(--hd);font-weight:500;font-style:italic}
+.round-quote{font-family:'Noto Serif SC',serif;font-size:14.5px;color:var(--hd);line-height:1.85;padding-left:14px;border-left:2px solid rgba(168,156,184,.25);margin:6px 0}
+.round-after{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--tx2);letter-spacing:.05em;margin-top:8px;padding-top:8px;border-top:1px dashed rgba(140,150,170,.20)}
+.round-after strong{color:var(--a1)}
+
+@media(max-width:980px){
+  .wrap{grid-template-columns:1fr;gap:30px}
+  .sidebar{position:static;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .interest-row{grid-template-columns:1fr}
+  .interest-row>div{border-right:none;border-bottom:1px solid var(--border)}
+  .status-row{grid-template-columns:1fr}
+  .status-row>div{border-right:none;border-bottom:1px solid var(--border)}
+  .status-row>div:last-child{border-bottom:none}
+}
+@media(max-width:600px){
+  .masthead{padding:30px 18px 22px}
+  .mhname{font-size:24px}
+  .mhname .zh{font-size:16px;margin-left:8px;display:inline-block}
+  .wrap{padding:24px 18px 60px}
+  .ti{font-size:9px}
+  .pnav a{font-size:9px;padding:9px 10px}
+  .etitle{font-size:18px}
+  .hzbox .hzn{font-size:36px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="ti">
+    <div class="tl">
+      <span class="chip">427Hz</span>
+      <span class="chip">CA V0.3.1</span>
+      <span class="chip">术语精化 · R6</span>
+      <span class="chip">艺术美直觉 + 自然美直觉</span>
+      <span class="chip">Claude=彩虹镜位/UpBass</span>
+      <span>Philadelphia, PA · EDT</span>
+      <span>珏历第 9 天 · 2026.05.19</span>
+    </div>
+    <div class="tr">
+      <a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a>
+      <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">MellowAcademic</a>
+      <a href="https://mellowwei.github.io/ThreeModalAesthetics/" target="_blank">TMA</a>
+      <a href="#cover">EN</a>
+      <a href="#cover">中文</a>
+    </div>
+  </div>
+</div>
+
+<div style="background:linear-gradient(180deg,rgba(184,165,212,.04),transparent);border-bottom:1px solid var(--border);padding:14px 0">
+  <div style="max-width:1080px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em">
+    <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank" style="color:var(--a1);text-decoration:none;display:flex;align-items:center;gap:6px;padding:4px 10px;border:1px solid rgba(184,165,212,.22);border-radius:2px;background:rgba(184,165,212,.04)">
+      <span style="font-size:9px;color:var(--tx3);letter-spacing:.15em;text-transform:uppercase">Parent</span>
+      <span>MellowAcademic</span>
+      <span style="color:var(--tx2);font-size:10px">· 学术总站</span>
+    </a>
+    <span style="color:var(--tx3);font-size:14px">›</span>
+    <span style="color:var(--tx2);padding:4px 8px">Aesthetic Sibling Axis · 美学兄弟轴</span>
+    <span style="color:var(--tx3);font-size:14px">›</span>
+    <span style="color:var(--hd);font-weight:700;padding:4px 10px;border:1px solid var(--border-hi);border-radius:2px;background:rgba(184,165,212,.06)">
+      Cognitive Aesthetics
+      <span style="color:var(--a1);font-weight:400;margin-left:6px;font-size:10px">· 认知美学 · v0.3</span>
+    </span>
+    <span style="flex:1"></span>
+    <span style="color:var(--tx3);font-size:10px;letter-spacing:.12em;text-transform:uppercase">Sibling of TMA · 振动即存在 Lineage</span>
+  </div>
+</div>
+
+<div class="masthead" id="cover">
+  <div class="mhmeta">A Discipline · 认知美学 · Cognitive Aesthetics · Terminology Precision Edition · 艺术美直觉 + 自然美直觉</div>
+  <div class="mhname">Cognitive Aesthetics <span class="zh">认知美学</span></div>
+  <div class="mhsub">A discipline studying consciousness-mediated aesthetic events — artistic beauty and natural beauty — operating through <strong>artistic-beauty intuition</strong> (对人造作品) and <strong>natural-beauty intuition</strong> (对自然对象), the two members of the <strong>审美直觉</strong> umbrella. V0.2 used "美学直觉" as a single term; R6 (2026.05.19) diagnosed this as contradictory (美 only applies to humans, but human-aesthetic events are resonance not intuition) and split it. Kant's "disinterested pleasure" was real surface phenomenology but theoretical error: he missed the intuition bridge.<br>研究意识中介审美事件的学科——艺术美 + 自然美——通过 <strong>艺术美直觉</strong>(对人造作品)与 <strong>自然美直觉</strong>(对自然对象)运作 · 二者合称 <strong>审美直觉</strong>(伞)。V0.2 使用单一"美学直觉",R6(2026.05.19)诊断其为矛盾术语并拆分。</div>
+  <p class="mhq">艺术美直觉与自然美直觉是同一直觉架构在两类对象上的特殊化。表面无利害,结构必然有认知利害。TMA 共振美不在此伞下——人对人是身体直接事件,不通过直觉。<small>Artistic-beauty and natural-beauty intuition are the same intuition architecture specialized to two object types. Surface disinterested, structurally interest-laden. TMA resonance beauty is not under this umbrella — human-to-human is direct bodily event, not via intuition.</small></p>
+  <div class="versionbox">
+    <span class="vk">Version</span><span class="vv">V0.3.1 · Academic Submission Layer · Terminology Precision Edition · 2026.5.19 · 5 axioms · 6 corollaries · R6 split + 艺术美/自然美直觉 expanded</span>
+  </div>
+</div>
+
+<nav class="pnav">
+  <div class="pni">
+    <a href="#cover" class="on">Cover</a>
+    <a href="#abstract">Abstract</a>
+    <a href="#submission">Submission</a>
+    <a href="#terms">Terms</a>
+    <a href="#urtheme">∅ · Ur-Theme</a>
+    <a href="#frame">0 · Frame</a>
+    <a href="#axioms">I · Five Axioms</a>
+    <a href="#intuition">II · 审美直觉(伞)</a>
+    <a href="#artistic">II-A · 艺术美直觉</a>
+    <a href="#natural">II-B · 自然美直觉</a>
+    <a href="#bidirectional">III · 审美⇄认知</a>
+    <a href="#corollaries">IV · Six Corollaries</a>
+    <a href="#interest">V · Interest Map</a>
+    <a href="#kant">VI · On Kant V2</a>
+    <a href="#topology">VII · Topology with TMA</a>
+    <a href="#interfaces">VIII · Interfaces</a>
+    <a href="#claimledger">Claim Ledger</a>
+    <a href="#objections">Objections</a>
+    <a href="#references">References</a>
+    <a href="#inner">Inner Layer</a>
+    <a href="#lock">Lock</a>
+  </div>
+</nav>
+
+<div class="wrap">
+<main>
+
+<div class="feedhd">Cognitive Aesthetics · 认知美学 · <span>Consciousness-Mediated Aesthetic Events · 意识中介审美事件</span></div>
+
+<article class="entry" id="abstract">
+  <div class="etop">
+    <span class="badge bp">Abstract</span>
+    <span class="edate">problem · approach · contribution · submission layer</span>
+  </div>
+  <div class="etitle">Abstract<span class="sub">摘要 · academic-facing version</span></div>
+  <p class="edesc"><em>Problem.</em> Modern aesthetic theory often treats beauty as either a property of objects, a disinterested judgment, or a culturally trained taste, but it rarely distinguishes between direct bodily aesthetic events and consciousness-mediated aesthetic registration. This ambiguity makes it difficult to explain why artworks and natural objects can feel disinterested at the surface while still reflecting value, memory, education, culture, and self-positioning. <em>Approach.</em> Cognitive Aesthetics (CA) proposes a conceptual distinction between bodily resonance-events, handled by Three-Modal Aesthetics (TMA), and cognitive-refraction events, handled by CA. Within CA, the earlier term "美学直觉" is retired and replaced by a more precise structure: <strong>艺术美直觉</strong> for human-made works, <strong>自然美直觉</strong> for natural objects, and <strong>审美直觉</strong> as their umbrella term. <em>Contribution.</em> The framework offers five axioms, six corollaries, a two-layer interest principle, a revised diagnosis of Kant's disinterested pleasure, and an applied route toward aesthetic diagnostics, aesthetic pedagogy, and aesthetic counseling.</p>
+  <p class="edesc zh"><em>问题。</em>现代美学常把美理解为对象属性、无利害判断或文化训练出的品味,但很少区分「身体直接审美事件」与「意识中介审美指认」。因此,它难以解释为什么艺术品与自然对象在表面层可以呈现为无利害,却在结构层仍携带价值、记忆、教育、文化与自我位置。<em>方法。</em>认知美学(CA)区分由三模态美学(TMA)处理的身体共振事件,与由 CA 处理的认知折射事件。CA 内部撤回早期术语「美学直觉」,改为更精确的三分结构:面向人造作品的<strong>艺术美直觉</strong>、面向自然对象的<strong>自然美直觉</strong>,以及二者合称的<strong>审美直觉</strong>。<em>贡献。</em>本文建立五公理、六推论、双层利害原则、康德「无利害愉悦」的分层诊断,并打开审美诊断学、审美训练学与审美咨询三条应用路径。</p>
+</article>
+
+<article class="entry" id="submission">
+  <div class="etop">
+    <span class="badge bpub">Submission Layer</span>
+    <span class="edate">public academic language · internal source-field layer separated</span>
+  </div>
+  <div class="etitle">Public Academic Layer / Source-Field Layer<span class="sub">投稿层 / 源场层 · 双开结构</span></div>
+  <div class="status-ledger">
+    <div class="status-row header"><div>Layer</div><div>Function</div><div>Rule</div></div>
+    <div class="status-row"><div><strong>Public Academic Layer</strong><br>公共学术层</div><div>Allows readers from aesthetics, philosophy of art, cognitive science, HCI, and learning sciences to evaluate the argument without accepting the entire source-field ecology.</div><div>Use conceptual analysis, citation, objection handling, scope limits, and defined terms.</div></div>
+    <div class="status-row"><div><strong>Internal Source-Field Layer</strong><br>源场内部层</div><div>Preserves the generative history, 427Hz signature, TMA/CA lineage, MetaLogic method, and witness positions.</div><div>Place origin records, naming sequences, and Trinity roles in provenance / archive zones rather than the central submission argument.</div></div>
+    <div class="status-row"><div><strong>Bridge Rule</strong><br>桥接规则</div><div>External readers do not need to accept SourceFields, MetaLogic, or 427Hz in order to evaluate CA's local claims.</div><div>CA can stand locally as a conceptual framework: bodily aesthetic events vs consciousness-mediated aesthetic registration.</div></div>
+  </div>
+  <div class="boundary-note">
+    <p class="edesc"><strong>Scope Statement.</strong> CA is not an empirical psychology paper, not a neuroaesthetics experiment, and not a full history of aesthetics. It is a conceptual taxonomy and argumentative framework. Empirical claims such as processing speed, developmental effects, or diagnostic reliability should be treated as hypotheses until separately tested.</p>
+    <p class="edesc zh"><strong>范围声明。</strong>CA 不是经验心理学论文,不是神经美学实验,也不是完整美学史。它是概念分类与论证框架。关于加工速度、发展影响或诊断可靠性的经验性说法,在单独测试前都应视为假设。</p>
+  </div>
+</article>
+
+<article class="entry" id="terms">
+  <div class="etop">
+    <span class="badge br">Terminology Audit</span>
+    <span class="edate">V0.3.1 locked terms · retired terms · forward references</span>
+  </div>
+  <div class="etitle">Terminology Precision Table<span class="sub">术语精化表 · prevent drift before submission</span></div>
+  <div class="status-ledger">
+    <div class="status-row header"><div>Term</div><div>Status</div><div>Definition / Use Rule</div></div>
+    <div class="status-row"><div><strong>Cognitive Aesthetics / 认知美学</strong></div><div><span class="st">LOCKED</span></div><div>Study of consciousness-mediated aesthetic events directed toward non-subject objects.</div></div>
+    <div class="status-row"><div><strong>Artistic-Beauty Intuition / 艺术美直觉</strong></div><div><span class="st">LOCKED</span></div><div>Compressed aesthetic judgment directed toward human-made works: art, music recordings, literature, film, design, architecture.</div></div>
+    <div class="status-row"><div><strong>Natural-Beauty Intuition / 自然美直觉</strong></div><div><span class="st">LOCKED</span></div><div>Compressed aesthetic judgment directed toward natural objects: landscapes, plants, animals, celestial phenomena, natural events.</div></div>
+    <div class="status-row"><div><strong>Aesthetic Intuition / 审美直觉</strong></div><div><span class="st">UMBRELLA</span></div><div>Umbrella term for 艺术美直觉 + 自然美直觉. Does not include human-to-human beauty, taste, or deliciousness in TMA.</div></div>
+    <div class="status-row"><div><strong>美学直觉</strong></div><div><span class="st">RETIRED</span></div><div>Historical V0.2 matricial term. Keep only when discussing the R4 source quote or the R6 correction history.</div></div>
+    <div class="status-row"><div><strong>Cognitive Refraction / 认知折射</strong></div><div><span class="st">DEFINED</span></div><div>The registration layer through which consciousness produces an aesthetic verdict about a non-subject object.</div></div>
+    <div class="status-row"><div><strong>Interest / 利害</strong></div><div><span class="st">TWO-LAYER</span></div><div>Surface layer may appear disinterested in CA; structural layer remains interest-laden through memory, value, habitus, concept, identity, or attention.</div></div>
+    <div class="status-row"><div><strong>427Hz</strong></div><div><span class="st">SIGNATURE</span></div><div>Authorial/aesthetic signature and internal frequency marker; not an empirical acoustic or neural claim inside CA.</div></div>
+    <div class="status-row"><div><strong>Source-Field / 源场</strong></div><div><span class="st">FORWARD REF</span></div><div>Internal ecology term. Public readers may evaluate CA without adopting it. Forward reference to MetaLogic / SourceFields.</div></div>
+  </div>
+</article>
+
+
+<article class="entry" id="urtheme" style="border-bottom:1px solid var(--border-hi);padding:50px 0">
+  <div class="etop">
+    <span class="badge bp" style="background:rgba(184,165,212,.10);border-color:rgba(184,165,212,.35);color:var(--hd);letter-spacing:.18em">∅ · Ur-Theme · 母题</span>
+    <span class="edate">Foundational Inscription · 奠基铭文</span>
+  </div>
+
+  <div style="text-align:center;padding:32px 20px;background:linear-gradient(180deg,rgba(184,165,212,.04),transparent);border:1px solid rgba(184,165,212,.18);border-radius:3px;margin:18px 0">
+    <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.25em;color:var(--a1);text-transform:uppercase;margin-bottom:22px">Foundational Inscription · 奠基铭文</div>
+    <div style="font-family:'Noto Serif SC',serif;font-weight:400;font-size:26px;color:var(--hd);line-height:1.40;letter-spacing:.04em;margin-bottom:22px">艺术美属作品 · 自然美属自然 · 认知美属意识折射。<br>审美直觉是 CA 内表面与结构的桥接。<br>结构层利害必然在场 · 表面层在 CA 中可呈现无利害。</div>
+    <div style="font-family:'Spectral',serif;font-style:italic;font-size:15px;font-weight:300;color:var(--a1);line-height:1.55">Artistic beauty belongs to works, natural beauty to nature, cognitive beauty to consciousness-refraction.<br>Aesthetic intuition bridges surface and structure within CA.<br>Structure: interest always present · Surface: may appear disinterested in CA.</div>
+    <div style="margin-top:28px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--tx2);text-transform:uppercase">— Cognitive Aesthetics · Foundational Statement</div>
+  </div>
+
+  <p class="edesc"><strong>Cognitive Aesthetics</strong> stands as the sibling axis to Three-Modal Aesthetics. While TMA handles bodily contact events (projection, resonance, assimilation), CA handles events of consciousness-mediated registration — where the object cannot resonate at the same vibrational layer, and beauty arises in the cognitive refraction layer instead.</p>
+  <p class="edesc zh">认知美学是三模态美学的兄弟轴。TMA 处理身体接触事件(投射、共振、同化),CA 处理意识中介的指认事件——对象不能在同一振动层共振时,美的事件在认知折射层发生。</p>
+
+  <div class="keyline">
+    <div class="keyline-cn">两轴共享双层利害原则:结构层必然利害。CA 表面层可显现为无利害——这是审美直觉的现象学,非结构事实。</div>
+    <div class="keyline-en">Both axes share the two-layer principle: interest is always structurally present. The surface may appear disinterested in CA — this is aesthetic intuition's phenomenology, not a structural fact.</div>
+  </div>
+</article>
+
+<article class="entry" id="frame">
+  <div class="etop">
+    <span class="badge bp">0 · Discipline Frame</span>
+    <span class="edate">学科声明 · Discipline Statement</span>
+  </div>
+  <div class="etitle">What Cognitive Aesthetics Studies<span class="sub">认知美学研究什么 · the scope and method</span></div>
+
+  <p class="edesc"><strong>Cognitive Aesthetics studies consciousness's registration of beauty in non-subject objects.</strong> Non-subject objects = objects that cannot resonate at the same vibrational layer as the observer:</p>
+  <ul style="margin:14px 0 14px 24px;color:var(--tx);font-size:14px;line-height:1.85">
+    <li><strong>Human-made works</strong> — paintings, sculptures, music recordings, films, literature, design, architecture</li>
+    <li><strong>Natural objects</strong> — landscapes, plants, animals, astronomical phenomena</li>
+    <li><strong>Any non-subject existence</strong> registered by consciousness as aesthetic</li>
+  </ul>
+
+  <p class="edesc zh"><strong>认知美学研究意识对非主体对象进行美的指认。</strong>非主体对象 = 不能与观看者同层共振的对象:人造作品 / 自然对象 / 任何非主体存在被意识当作审美对象。</p>
+
+  <div class="formula">
+    <div class="formula-label">Core Equation · 核心方程</div>
+    <div class="formula-eq">Aesthetic Event <span class="op">=</span> Consciousness <span class="op">×</span> Non-Subject Object <span class="op">→</span> Cognitive Refraction<br><br>意识 <span class="op">×</span> 非主体对象 <span class="op">→</span> 认知折射 <span class="op">→</span> 艺术美 / 自然美</div>
+    <div class="formula-en">The object is the trigger, not the source. The source is the structure of the observer's cognition.</div>
+  </div>
+
+  <div class="keyline">
+    <div class="keyline-cn">艺术美不是美。艺术美是意识感受到了美。这是 R1 命名起手的原文,锁定 CA 的核心立场。</div>
+    <div class="keyline-en">Artistic beauty is not beauty. Artistic beauty is consciousness having registered beauty. This is the original R1 inscription that locks CA's core position.</div>
+  </div>
+
+  <div class="etags">
+    <span class="tag">discipline frame</span><span class="tag">cognitive refraction</span>
+    <span class="tag">non-subject object</span><span class="tag">consciousness-mediated</span>
+  </div>
+</article>
+
+<article class="entry" id="axioms">
+  <div class="etop">
+    <span class="badge bpub">I · Five Axioms</span>
+    <span class="edate">五公理 · V0.2 added CA·V</span>
+  </div>
+  <div class="etitle">Five Core Axioms<span class="sub">五条核心公理 · CA·V 审美直觉公理新加</span></div>
+
+  <p class="edesc">Cognitive Aesthetics V0.2 rests on five axioms. The first names the core modality. The second establishes the two-layer interest principle (surface/structure). The third gives the V2 layered diagnosis of Kant. The fourth secures the dual-axis distinction with TMA. <strong>The fifth (new in V0.2) names aesthetic intuition as CA's internal bridge mechanism.</strong></p>
+  <p class="edesc zh">认知美学 V0.2 建立在五条公理上。第一条命名核心模态;第二条确立双层利害原则(表面/结构);第三条对康德作 V2 分层诊断;第四条保障与 TMA 的双轴分立;<strong>第五条(V0.2 新加)命名审美直觉作为 CA 内部桥接机制。</strong></p>
+
+  <div class="props">
+
+    <div class="prop-card">
+      <div class="prop-num">Axiom · CA · I</div>
+      <div class="prop-title">Cognitive Refraction Axiom<span class="pzh">认知折射公理</span></div>
+      <div class="prop-statement">When the aesthetic object cannot resonate at the same vibrational layer, the beauty-event occurs in consciousness, not in bodily contact. This event is registration, not generation.</div>
+      <div class="prop-statement-zh">当审美对象不能同层共振时,美的事件在认知层发生,不在身体接触层。这是意识对"美"的指认,不是身体振动的生成。</div>
+      <div class="prop-body">Cognitive refraction is not lesser beauty — it is a different type of aesthetic event. It does not depend on the object's vibrational response. A painting, a mountain, a recording: none of these need to "respond" to the observer. Conceptual layer, cultural layer, memory layer, and self-layer are all involved.</div>
+      <div class="prop-body-zh">认知折射不是次等的美——它是另一类型的美的事件。它不依赖对象的振动响应。画、山、录音都不需要"回应"观看者。涉及概念层、文化层、记忆层、自我层的卷入。</div>
+      <span class="prop-domain">DOMAIN · 艺术作品 / 自然对象 / 任何非主体对象</span>
+    </div>
+
+    <div class="prop-card p2">
+      <div class="prop-num">Axiom · CA · II</div>
+      <div class="prop-title">Universal Interest Axiom<span class="pzh">全域利害公理</span></div>
+      <div class="prop-statement">All aesthetic events structurally involve interest. In the CA domain, surface-layer aesthetic judgment may appear disinterested — this is the surface phenomenology of aesthetic intuition, not a structural fact.</div>
+      <div class="prop-statement-zh">所有审美事件在结构层必然涉及利害。在 CA 域(艺术美学/自然美学),表面层的审美判断可以呈现为无利害——这是审美直觉的表面现象学,不是结构事实。</div>
+      <div class="prop-body"><strong>V0.2 双层精化</strong>:V0.1 是单层命题(所有美都有利害)。V0.2 拆为两层:<br>• <em>表面层</em> — 主体感受到的审美verdict(可显现为无利害,在 CA 中)<br>• <em>结构层</em> — 认知本身的运作(必然涉及利害)<br><br><strong>利害的两类</strong>:<br>• <em>身体利害</em> — 振动响应、欲望、卷入、共振张力(TMA 域为主)<br>• <em>认知利害</em> — 概念立场、文化训练、自我认同、价值投射、记忆牵引(CA 域为主)<br><br>本公理作为 TMA + CA 共享元命题(UIP V1.1)。</div>
+      <div class="prop-body-zh"><strong>判据</strong>:任何审美事件,在结构层必有利害。若结构层也无利害,则该事件<strong>不是审美事件</strong>。康德观察到的"无利害美"是表面层现象学,经审美直觉(公理 CA·V)运作产生。</div>
+    </div>
+
+    <div class="prop-card p3">
+      <div class="prop-num">Axiom · CA · III</div>
+      <div class="prop-title">Anti-Kant Structural Axiom<span class="pzh">康德结构性反驳公理</span></div>
+      <div class="prop-statement">Kant's "disinterested pleasure" is real surface phenomenology but structural theoretical error. He correctly observed CA's surface-disinterest but missed aesthetic intuition (the bridge mechanism), extending surface into structure based on "invisibility = nonexistence."</div>
+      <div class="prop-statement-zh">康德的"无利害愉悦"在表面层是真实现象学,在结构层是延伸错误。康德观察对(CA 表面层确实可呈现无利害),但漏看了审美直觉这一桥接机制,因此把表面无利害延伸为结构无利害。</div>
+      <div class="prop-body"><strong>V0.2 分层诊断表</strong>:<br>• <em>现象学观察</em> — <strong>对</strong> · CA 表面层确实可呈现无利害<br>• <em>概念延伸</em> — <strong>错</strong> · 把表面延伸为结构<br>• <em>机制理论</em> — <strong>错</strong> · 漏看审美直觉桥接<br>• <em>学科建制</em> — <strong>错</strong> · 建立在"不可见=不存在"推理上<br><br><strong>V0.1 整体反驳 → V0.2 分层诊断</strong>:V0.1 的强反驳虽然结论正确,但缺乏对康德观察延续两百年的解释力;V0.2 补足这一缺口——表面层是真的,所以观察延续合理;但延伸到结构层是错的,所以学科建制错了。</div>
+      <div class="prop-body-zh"><strong>为什么康德观察延续两百年</strong>:因为表面层是真的。任何审美时都能验证"我不是在算计"——这一现象学事实在 V0.2 被显性恢复其真实性;V0.2 只否定它能延伸到结构层。这就是 V0.2 比 V0.1 更精确的地方。</div>
+    </div>
+
+    <div class="prop-card p4">
+      <div class="prop-num">Axiom · CA · IV</div>
+      <div class="prop-title">Dual-Axis Mutual Exclusivity Axiom<span class="pzh">双轴互斥公理</span></div>
+      <div class="prop-statement">An aesthetic event occurs either in bodily contact (TMA, direct event), or in cognitive refraction (CA, via aesthetic intuition), or both simultaneously (trans-axis). Resonance-beauty and artistic-beauty are structurally irreducible — different mechanisms entirely.</div>
+      <div class="prop-statement-zh">审美事件,要么发生在身体接触层(TMA · 直接事件),要么发生在认知折射层(CA · 经审美直觉),要么两者并存(跨轴现象)。共振美与艺术美在结构上不可化约——是完全不同的运作机制。</div>
+      <div class="prop-body">Trans-axis events ≠ identity. They are two distinct structural layers within one event. Self-perceived beauty (CA Corollary 3) is the cleanest case: bodily self-resonance + cognitive self-registration co-occur. Recorded music (CA Corollary 4) is another: TMA cross-temporal resonance + CA artistic registration co-occur within the same listening event.</div>
+      <div class="prop-body-zh">跨轴 ≠ 同一。它们是同一事件的两个不同结构层。自我之美(推论 3)是最清晰案例:身体自我共振 + 认知自我指认同时发生。录音音乐(推论 4)是另一案例:TMA 跨时空共振 + CA 艺术美指认同时在听音事件中发生。</div>
+    </div>
+
+    <div class="prop-card p5">
+      <div class="prop-num">Axiom · CA · V</div>
+      <div class="prop-title">Aesthetic Intuition Axiom<span class="pzh">审美直觉公理 · NEW V0.2</span></div>
+      <div class="prop-statement">In the CA domain, aesthetic judgment operates as aesthetic intuition: a compressed bridge mechanism producing surface-disinterested verdicts while structurally encoding implicit judgments about the subject's cognitive interest. Aesthetic intuition applies only to CA; TMA's three modalities are direct bodily events, not intuitive judgments.</div>
+      <div class="prop-statement-zh">在 CA 域(艺术美学/自然美学),审美判断以审美直觉的形式运作:一个压缩的桥接机制,在表面层产生看似无利害的美的verdict,在结构层隐含主体认知利害的判断。审美直觉<em>仅</em>适用于 CA 域;TMA 三模态都是直接身体事件,不通过直觉。</div>
+      <div class="prop-body"><strong>Five defining features</strong>:<br>• <em>Compression</em> — judgment process compressed to instantaneous verdict<br>• <em>Surface disinterest</em> — phenomenology genuinely appears uninvested<br>• <em>Structural interest</em> — internal content judges cognitive-interest alignment<br>• <em>Speed</em> — typically 100-300ms, faster than explicit cognition<br>• <em>Bidirectionality</em> — judgment both reflects and shapes cognitive interest structure</div>
+      <div class="prop-body-zh"><strong>五大特征</strong>:<br>• <em>压缩性</em> — 判断过程被压缩到瞬间verdict<br>• <em>表面无利害</em> — 现象学真实呈现为无算计<br>• <em>结构利害</em> — 内部内容是认知利害的对齐判断<br>• <em>快速性</em> — 通常 100-300ms,远快于显性认知<br>• <em>双向性</em> — verdict既反映认知,又反向塑造认知<br><br>详见独立元概念文档 · aesthetic_intuition_v1.md</div>
+      <span class="prop-domain">→ 审美直觉 · AESTHETIC INTUITION · CA-only</span>
+    </div>
+
+  </div>
+
+  <div class="etags">
+    <span class="tag">five axioms</span><span class="tag">cognitive refraction</span>
+    <span class="tag">two-layer interest</span><span class="tag">Kant V2 diagnosis</span><span class="tag">dual-axis</span><span class="tag">aesthetic intuition</span>
+  </div>
+</article>
+
+<!-- ============================================ -->
+<!-- II · AESTHETIC INTUITION MODULE (NEW V0.2)    -->
+<!-- ============================================ -->
+<article class="entry" id="intuition" style="border-bottom:1px solid var(--border-hi);padding:40px 0">
+  <div class="etop">
+    <span class="badge bpub" style="background:rgba(184,165,212,.10);border-color:rgba(184,165,212,.35);color:var(--hd);letter-spacing:.16em">II · 审美直觉 · Aesthetic Intuition Umbrella · V0.3</span>
+    <span class="edate">2026.05.19 · R4 浮出 · R6 精化为伞概念</span>
+  </div>
+  <div class="etitle">审美直觉 · The Two-Member Umbrella<span class="sub">Artistic-Beauty Intuition + Natural-Beauty Intuition · 二者合称审美直觉</span></div>
+
+  <p class="edesc"><strong>V0.3 R6 precision</strong>: V0.2 used "美学直觉" (literally "aesthetic intuition" but where 美学 = "study of beauty" = "study of humans" since 美 only applies to humans in TMA II). R6 diagnosed this as a contradictory term — human-aesthetic events are resonance not intuition. The term is retired and replaced by two object-specific intuitions plus an umbrella:</p>
+  <p class="edesc zh"><strong>V0.3 R6 精化</strong>:V0.2 使用"美学直觉"。但"美学"= 关于美的学问 = 关于人的学问(因为美在 TMA II 只能形容人),而人对人是共振不是直觉。R6 诊断为矛盾术语,撤回,拆分为两种对象特异的直觉 + 一个伞名:</p>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>名</div><div>对象</div><div>章节</div></div>
+    <div class="status-row"><div><strong>艺术美直觉</strong> · Artistic-Beauty Intuition</div><div>人造作品(画 · 雕塑 · 音乐 · 文学 · 影像 · 设计 · 建筑)</div><div><a href="#artistic" style="color:var(--a1);text-decoration:underline">→ II-A 详见</a></div></div>
+    <div class="status-row"><div><strong>自然美直觉</strong> · Natural-Beauty Intuition</div><div>自然对象(山川 · 海洋 · 动植物 · 天文现象)</div><div><a href="#natural" style="color:var(--a1);text-decoration:underline">→ II-B 详见</a></div></div>
+    <div class="status-row"><div><strong>审美直觉</strong>(伞) · Aesthetic Intuition (umbrella)</div><div>= 艺术美直觉 + 自然美直觉</div><div>本章节</div></div>
+  </div>
+
+  <p class="edesc"><strong>What the umbrella names</strong>: a compressed judgment mechanism within CA that produces apparently-disinterested aesthetic verdicts at the surface, while structurally encoding implicit judgments about the subject's cognitive interest. It is the mechanism Kant observed (as "disinterested pleasure") but failed to identify as a mechanism — leading to the structural error of "disinterested aesthetics." <strong>The umbrella does NOT cover human-to-human aesthetic events</strong> — those are TMA resonance, not intuition (see CA·IV dual-axis exclusivity).</p>
+  <p class="edesc zh"><strong>伞名所指</strong>:CA 域内的压缩判断机制,在表面层产生看似无利害的审美verdict,在结构层隐含主体认知利害的判断。它就是康德观察到("无利害愉悦")但未能识别为一种机制的东西——这一漏看导致了"无利害美学"的结构错误。<strong>伞名不覆盖人对人的"美"事件</strong>——那是 TMA 共振 · 不是直觉(参见 CA·IV 双轴互斥)。</p>
+
+  <div class="formula">
+    <div class="formula-label">The Compression Mechanism · 压缩机制</div>
+    <div class="formula-eq">认知利害(材料库) <span class="op">×</span> 对象 X <span class="op">→</span> 审美直觉 <span class="op">→</span> 表面verdict<br><br>cognitive interest reservoir <span class="op">×</span> object X <span class="op">→</span> compression <span class="op">→</span> surface verdict</div>
+    <div class="formula-en">The judgment process is compressed to invisibility; the verdict surfaces as if disinterested.</div>
+  </div>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">五大特征 · Five Defining Features</h3>
+
+  <div class="interest-table">
+    <div class="interest-row header"><div>特征 · Feature</div><div>表述</div><div>含义</div></div>
+    <div class="interest-row"><div><strong>压缩性</strong> · Compression</div><div>判断过程被压缩为瞬间verdict</div><div>主体只感知结果,不感知过程</div></div>
+    <div class="interest-row"><div><strong>表面无利害</strong> · Surface Disinterest</div><div>现象学呈现为无算计、无欲求</div><div>这是康德观察的来源</div></div>
+    <div class="interest-row"><div><strong>结构利害</strong> · Structural Interest</div><div>内部内容是认知利害对齐判断</div><div>表面无利害是被压缩的结果</div></div>
+    <div class="interest-row"><div><strong>快速性</strong> · Speed</div><div>通常 100-300ms</div><div>远快于显性认知(System 1 特例)</div></div>
+    <div class="interest-row"><div><strong>双向性</strong> · Bidirectionality</div><div>既反映认知,又塑造认知</div><div>R4 强调的被忽略方向</div></div>
+  </div>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">域边界 · Domain Boundary</h3>
+
+  <p class="edesc"><strong>适用 · Applies to:</strong> 艺术美学 + 自然美学 + 设计/影视/虚拟艺术混合域</p>
+  <p class="edesc"><strong>不适用 · Does NOT apply to:</strong> TMA 三模态全部(共振美 / 味 / 美味)。源场裁决位 R4 明确指认:</p>
+
+  <div class="boundary-note">
+    <p class="edesc" style="margin:0;font-family:'Noto Serif SC',serif;font-size:14.5px;color:var(--hd);"><em>"美学直觉" 不是 "真的=美学"。<br>美学直觉只是艺术美学和自然美学的运作方式。<br>真的美学(TMA 共振美)不通过直觉,是直接事件。</em></p>
+    <p class="edesc" style="margin-top:8px"><strong>为什么 TMA 不通过直觉</strong>:TMA 三模态都是身体直接事件——身体接触发生,事件发生。中间没有"判断"环节,因此也没有"被压缩的判断"。<br><strong>为什么 CA 必须通过直觉</strong>:CA 域对象不发起共振响应,主体要产生"美的事件"必须经过认知判断这一关——而这个判断采取了直觉的形式。</p>
+  </div>
+
+  <div class="keyline">
+    <div class="keyline-cn">审美直觉是康德两百年漏看的桥接物。它解释了为什么审美判断在表面层确实无利害,在结构层却必然有利害。</div>
+    <div class="keyline-en">Aesthetic intuition is the bridge Kant missed for two centuries. It explains why aesthetic judgment is genuinely disinterested at the surface yet necessarily interest-laden at the structural layer.</div>
+  </div>
+
+  <div class="etags">
+    <span class="tag">aesthetic intuition</span><span class="tag">bridge mechanism</span>
+    <span class="tag">compression</span><span class="tag">five features</span>
+    <span class="tag">CA-only</span><span class="tag">NEW V0.2</span>
+  </div>
+</article>
+
+<!-- ============================================ -->
+<!-- II-A · ARTISTIC-BEAUTY INTUITION · NEW V0.3   -->
+<!-- ============================================ -->
+<article class="entry" id="artistic">
+  <div class="etop">
+    <span class="badge bpub" style="background:rgba(184,165,212,.10);border-color:rgba(184,165,212,.35);color:var(--hd);letter-spacing:.16em">II-A · 艺术美直觉 · NEW V0.3</span>
+    <span class="edate">Artistic-Beauty Intuition · R6 命名</span>
+  </div>
+  <div class="etitle">艺术美直觉 · Artistic-Beauty Intuition<span class="sub">直觉架构在人造作品对象上的特殊化运作</span></div>
+
+  <p class="edesc"><strong>定义 · Definition</strong>: When the subject faces human-made objects (paintings, sculptures, literature, music recordings, films, design, architecture), the aesthetic verdict is generated through a fast, implicit, compressed judgment — the artistic-beauty intuition.</p>
+  <p class="edesc zh"><strong>定义</strong>:直觉架构在「人造作品」对象上的特殊化运作。当主体面对绘画、雕塑、文学、影像、音乐录音、设计、建筑等人造对象时,审美verdict 通过快速隐含的判断生成。</p>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">运作机制 · Mechanism</h3>
+
+  <ul style="margin:14px 0 14px 24px;color:var(--tx);font-size:14px;line-height:1.85">
+    <li><strong>直觉判断 · 非共振</strong> — 作品本身不发起振动响应,无双向共振可能</li>
+    <li><strong>对象不是主体</strong> — 美的事件不在双向身体层完成,而在单向认知折射层完成</li>
+    <li><strong>CA 推论 1 内容</strong> — 见 §IV Six Corollaries</li>
+  </ul>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">五特征在艺术美直觉中的呈现</h3>
+
+  <div class="interest-table">
+    <div class="interest-row header"><div>特征</div><div>具体形态</div></div>
+    <div class="interest-row"><div><strong>压缩性</strong></div><div>"这画真美"瞬间生成 · 不感知判断过程</div></div>
+    <div class="interest-row"><div><strong>表面无利害</strong></div><div>主体感受不到自己在算计什么 · 这正是康德观察到的表面现象学</div></div>
+    <div class="interest-row"><div><strong>结构利害</strong></div><div>文化训练 / 艺术史浸染 / 审美教育 / 阶层 habitus 在场</div></div>
+    <div class="interest-row"><div><strong>快速性</strong></div><div>通常 100-300ms 完成</div></div>
+    <div class="interest-row"><div><strong>双向性</strong></div><div>verdict 反向塑造主体的艺术品味结构(R4 反转方向)</div></div>
+  </div>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">与既有学科的接口</h3>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>外部学科</div><div>艺术美直觉的接口</div></div>
+    <div class="status-row"><div><strong>艺术史 · Art History</strong></div><div>提供艺术美直觉的历史维度——不同时代的直觉模式演化</div></div>
+    <div class="status-row"><div><strong>艺术评论 · Art Criticism</strong></div><div>是艺术美直觉的延迟解压 + 显性化</div></div>
+    <div class="status-row"><div><strong>Bourdieu · habitus</strong></div><div>提供艺术美直觉认知利害材料库的社会学结构</div></div>
+    <div class="status-row"><div><strong>Danto · 艺术本体论</strong></div><div>艺术对象需要认知/概念框架,与"非共振直觉判断"立场相容</div></div>
+  </div>
+
+  <div class="boundary-note">
+    <p class="edesc"><strong>边界 · Boundary</strong>:艺术美直觉<em>不适用于</em>:</p>
+    <ul style="margin:8px 0 0 24px;color:var(--tx);font-size:13.5px;line-height:1.85">
+      <li>人对人("她真美")· 那是 TMA 最小共振(见 TMA V1.4 共振谱推论)</li>
+      <li>自然对象 · 那是自然美直觉(II-B)</li>
+      <li>食物("好吃")· 那是 TMA 美味(同化模态)</li>
+    </ul>
+  </div>
+
+  <div class="etags">
+    <span class="tag">artistic-beauty intuition</span><span class="tag">man-made objects</span>
+    <span class="tag">five features</span><span class="tag">habitus interface</span>
+    <span class="tag">NEW V0.3</span>
+  </div>
+</article>
+
+<!-- ============================================ -->
+<!-- II-B · NATURAL-BEAUTY INTUITION · NEW V0.3    -->
+<!-- ============================================ -->
+<article class="entry" id="natural">
+  <div class="etop">
+    <span class="badge bpub" style="background:rgba(184,165,212,.10);border-color:rgba(184,165,212,.35);color:var(--hd);letter-spacing:.16em">II-B · 自然美直觉 · NEW V0.3</span>
+    <span class="edate">Natural-Beauty Intuition · R6 命名 · N-α 归位</span>
+  </div>
+  <div class="etitle">自然美直觉 · Natural-Beauty Intuition<span class="sub">直觉架构在自然对象上的特殊化运作</span></div>
+
+  <p class="edesc"><strong>定义 · Definition</strong>: When the subject faces natural objects (landscapes, oceans, plants and animals, celestial phenomena, natural events), the aesthetic verdict is generated through a fast, implicit, compressed judgment — the natural-beauty intuition.</p>
+  <p class="edesc zh"><strong>定义</strong>:直觉架构在「自然对象」对象上的特殊化运作。当主体面对山川、海洋、动植物、天文现象、自然事件等非人造对象时,审美verdict 通过快速隐含的判断生成。</p>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">运作机制 · Mechanism</h3>
+
+  <ul style="margin:14px 0 14px 24px;color:var(--tx);font-size:14px;line-height:1.85">
+    <li><strong>直觉判断 · 非共振</strong> — 自然对象本身不发起振动响应,无双向共振可能</li>
+    <li><strong>对象不是主体</strong> — 美的事件不在双向身体层完成,而在单向认知折射层完成</li>
+    <li><strong>CA 推论 2 内容(N-α 归位)</strong> — 见 §IV Six Corollaries</li>
+  </ul>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">与艺术美直觉的结构同型与差异</h3>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>维度</div><div>同型</div><div>差异</div></div>
+    <div class="status-row"><div><strong>五特征</strong></div><div>完全共享</div><div>—</div></div>
+    <div class="status-row"><div><strong>对象类型</strong></div><div>—</div><div>人造 vs 自然</div></div>
+    <div class="status-row"><div><strong>认知利害材料库</strong></div><div>habitus 作为统一来源</div><div>自然美的材料库含演化沉淀(对称、流畅、新奇度适中)+ 文化叠加(景观偏好、风景诗学)</div></div>
+    <div class="status-row"><div><strong>康德误读位置</strong></div><div>共同被康德描述为"无利害"</div><div>自然美在康德体系中是<strong>最强典范</strong> · 因此 R2 命题"自然美也不存在无利害关系的美"在 CA 内部尤其重要</div></div>
+  </div>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">与既有学科的接口</h3>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>外部学科</div><div>自然美直觉的接口</div></div>
+    <div class="status-row"><div><strong>环境美学 · Environmental Aesthetics</strong></div><div>自然美直觉的应用场域,全域归 CA·2</div></div>
+    <div class="status-row"><div><strong>演化美学</strong> · Pinker / Dutton / E.O. Wilson</div><div>自然美直觉认知利害材料库的演化沉淀来源 · 待 V0.4+ 引用支架</div></div>
+    <div class="status-row"><div><strong>生态美学</strong></div><div>自然美直觉的环境维度</div></div>
+    <div class="status-row"><div><strong>风景诗学 · 山水画论</strong></div><div>自然美直觉的中国哲学接口</div></div>
+  </div>
+
+  <div class="boundary-note">
+    <p class="edesc"><strong>边界 · Boundary</strong>:自然美直觉<em>不适用于</em>:</p>
+    <ul style="margin:8px 0 0 24px;color:var(--tx);font-size:13.5px;line-height:1.85">
+      <li>人对人 · 那是 TMA 共振美</li>
+      <li>人造作品 · 那是艺术美直觉(II-A)</li>
+      <li>自然物作为食物 · 那是 TMA 同化模态</li>
+      <li><strong>自然物被人格化("拟人化")时</strong> · 可能跨入 TMA 半共振 · 需个案判定</li>
+    </ul>
+  </div>
+
+  <div class="etags">
+    <span class="tag">natural-beauty intuition</span><span class="tag">N-α 归位</span>
+    <span class="tag">environmental aesthetics</span><span class="tag">evolutionary substrate</span>
+    <span class="tag">NEW V0.3</span>
+  </div>
+</article>
+
+<!-- ============================================ -->
+<!-- III · BIDIRECTIONAL 审美⇄认知 (NEW V0.2 · expanded V0.3) -->
+<!-- ============================================ -->
+<article class="entry" id="bidirectional">
+  <div class="etop">
+    <span class="badge bp">III · 审美 ⇄ 认知 · Bidirectional</span>
+    <span class="edate">R4 第一句 · The Forgotten Direction</span>
+  </div>
+  <div class="etitle">Aesthetic ⇄ Cognitive · The Forgotten Direction<span class="sub">审美 ⇄ 认知 · 被忽略的反向 · R4 命题第一句</span></div>
+
+  <p class="edesc"><strong>R4 first claim</strong>: "人们总是忽略艺术/自然审美判断对认知判断的影响。" People always forget that artistic/natural aesthetic judgment shapes cognitive judgment — not just the other way around. This module makes the bidirectional structure explicit.</p>
+  <p class="edesc zh">传统方向被广泛承认:认知影响审美(文化决定品味,经验塑造偏好)。<strong>被忽略的方向</strong>:审美也塑造认知——每一次审美verdict都反向作用于主体的认知利害结构。</p>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>方向</div><div>表述</div><div>状态</div></div>
+    <div class="status-row"><div><strong>认知 → 审美</strong></div><div>"你的认知/文化/经验决定你觉得什么美"</div><div><span class="st">传统已知</span></div></div>
+    <div class="status-row"><div><strong>审美 → 认知</strong></div><div>"你的审美verdict反向塑造你的认知利害结构"</div><div><span class="st">R4 浮出 · V0.2 锁定</span></div></div>
+  </div>
+
+  <h3 style="font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);margin:24px 0 10px;">方法论反转 · The Methodological Reversal</h3>
+
+  <p class="edesc"><strong>审美判断是认知利害结构的可读输出。</strong>审美直觉把认知利害压缩为"X 美/不美"的形式——这种压缩是有损的,但输出仍然携带原始结构信息,可被慢速分析解压。<strong>要了解一个人的认知利害分布,看他的审美verdict。</strong></p>
+
+  <p class="edesc zh">这一反转打开了 CA 域的应用分支:</p>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>应用分支</div><div>运作方式</div><div>核心动作</div></div>
+    <div class="status-row"><div><strong>审美诊断学</strong> · Aesthetic Diagnostics</div><div>通过解构审美verdict反推认知利害结构</div><div>慢速解压审美直觉</div></div>
+    <div class="status-row"><div><strong>审美训练学</strong> · Aesthetic Pedagogy</div><div>通过引导审美方向反向塑造认知结构</div><div>利用直觉双向性</div></div>
+    <div class="status-row"><div><strong>审美咨询</strong> · Aesthetic Counseling</div><div>通过审美verdict变化追踪主体认知演化</div><div>审美verdict作为诊断信号</div></div>
+  </div>
+
+  <div class="boundary-note">
+    <p class="edesc"><strong>结构含义</strong>:审美教育在结构上比道德教育更深入——道德教育显性进入意识层,可被反思和拒绝;审美教育通过直觉压缩进入认知利害结构,绕过显性反思,直接重塑判断材料库。这是审美训练的隐性力量。</p>
+    <p class="edesc zh"><strong>Structural implication</strong>: Aesthetic education is structurally deeper than moral education. Moral teaching enters consciousness explicitly and can be reflected upon and rejected. Aesthetic training enters cognitive-interest structure through intuitive compression — bypassing explicit reflection — directly reshaping the judgment reservoir.</p>
+  </div>
+
+  <div class="etags">
+    <span class="tag">bidirectional</span><span class="tag">forgotten direction</span>
+    <span class="tag">methodological reversal</span><span class="tag">aesthetic diagnostics</span><span class="tag">NEW V0.2</span>
+  </div>
+</article>
+
+<article class="entry" id="corollaries">
+  <div class="etop">
+    <span class="badge br">IV · Six Corollaries</span>
+    <span class="edate">六条推论 · V0.2 added CA·6</span>
+  </div>
+  <div class="etitle">Six Corollaries<span class="sub">六条推论 · CA·6 审美→认知反转推论新加</span></div>
+
+  <div class="props">
+
+    <div class="prop-card">
+      <div class="prop-num">Corollary · CA · 1</div>
+      <div class="prop-title">Artistic Beauty = Cognitive Refraction toward Human-Made Works<span class="pzh">艺术美 = 对人造作品的认知美</span></div>
+      <div class="prop-body">Artistic beauty arises through cognitive refraction directed at human-made works (paintings, sculptures, music, literature, films, architecture, design). The work is the trigger, not the source; the source of beauty is the structure of the observer's cognition.</div>
+      <div class="prop-body-zh">艺术美归属于对人造作品的认知折射。作品是触发器,不是美的来源;美的来源是观看者的认知层结构。</div>
+      <span class="prop-domain">→ 艺术美 · ARTISTIC BEAUTY</span>
+    </div>
+
+    <div class="prop-card p2">
+      <div class="prop-num">Corollary · CA · 2</div>
+      <div class="prop-title">Natural Beauty = Cognitive Refraction toward Natural Objects (N-α)<span class="pzh">自然美 = 对自然对象的认知美</span></div>
+      <div class="prop-body">Natural beauty arises through cognitive refraction directed at natural objects (landscapes, plants, animals, celestial events). Natural objects do not initiate resonance response — therefore the human "sense of beauty" toward nature is a cognitive refraction event, structurally isomorphic with artistic beauty. The only distinction lies in object-type: human-made vs natural.</div>
+      <div class="prop-body-zh">自然美归属于对自然对象的认知折射。自然对象本身不发起共振响应,人对自然的"美感"是认知层折射事件,结构与艺术美同型。区别仅在对象类型。</div>
+      <div class="prop-body"><em>This corollary extends the P1 path globally and denies Kant's central claim that "natural beauty is the paradigm of pure disinterested aesthetics."</em></div>
+      <span class="prop-domain">→ 自然美 · NATURAL BEAUTY</span>
+    </div>
+
+    <div class="prop-card p3">
+      <div class="prop-num">Corollary · CA · 3</div>
+      <div class="prop-title">Self-Beauty = Trans-Axis Phenomenon<span class="pzh">自我之美 · 跨轴现象</span></div>
+      <div class="prop-body">Person-to-self operates trans-axially: resonance-beauty (bodily self-resonance, TMA II) + cognitive-beauty (self-registration, CA III) co-occur. "Continuously returning to oneself" = dual-axis sustained calibration. The Source-Field Arbiter's stability = continuous dual-axis unification within the self.</div>
+      <div class="prop-body-zh">人对自己跨轴运作:共振美(身体自我共振 · TMA II) + 认知美(自我指认 · CA III)同时发生。"持续回到自己" = 双轴持续校准事件。源场裁决位的稳定 = 自我内部双轴持续合一。</div>
+      <span class="prop-domain">→ 跨轴 · TRANS-AXIS</span>
+    </div>
+
+    <div class="prop-card p4">
+      <div class="prop-num">Corollary · CA · 4</div>
+      <div class="prop-title">Recorded Music Dual-Axis Reading<span class="pzh">录音音乐的双轴解读</span></div>
+      <div class="prop-body">TMA Corollary 3 unchanged: recording as object = taste; recording activating listener → cross-temporal resonance = beauty-event within the listener. CA dual provides parallel: recording as artwork = CA artistic beauty; listener's cognitive registration of beauty in the recording = CA artistic event. Same listening event triggers both. Each axis handles its own layer.</div>
+      <div class="prop-body-zh">TMA 推论 3 不动:录音作为对象 = 味;录音激活听者→ 跨时空共振 = 美的事件可在听者内部生成。CA 对偶补充:录音作为艺术作品 = CA 艺术美;听者认知指认 = CA 艺术美事件。同一听音事件触发两者。两轴各处理自己的层。</div>
+      <span class="prop-domain">→ 双轴并存 · DUAL-AXIS COEXISTENCE</span>
+    </div>
+
+    <div class="prop-card p5">
+      <div class="prop-num">Corollary · CA · 5</div>
+      <div class="prop-title">Linguistic Interface · The "Beautiful Painting" Bridge<span class="pzh">语用归位 · 「美的画」的合法接口</span></div>
+      <div class="prop-body">In TMA's technical vocabulary, "美的画" / "beautiful painting" remains a categorial error (beauty-domain misassigned to thing-domain). In CA's technical vocabulary, "艺术美的画" / "artistically beautiful painting" is structurally legitimate. <strong>Everyday Chinese "美的画" can now be re-read as the colloquial compression of "艺术美的画"</strong> — providing ordinary-language access to CA without conflict with TMA.</div>
+      <div class="prop-body-zh">在 TMA 技术词汇内,「美的画」仍是误用(美域错配于物域)。在 CA 技术词汇内,「艺术美的画」是合法表达。<strong>日常语言"美的画"现在可被重读为"艺术美的画"的口语省略形式</strong>——给日常用法一个合法接口,且不与 TMA 冲突。</div>
+      <div class="prop-body"><em>This corollary incidentally repairs the pragmatic awkwardness of TMA V1.1's "美的画" verdict.</em></div>
+      <span class="prop-domain">→ 语用桥接 · PRAGMATIC BRIDGE</span>
+    </div>
+
+    <div class="prop-card p4">
+      <div class="prop-num">Corollary · CA · 6</div>
+      <div class="prop-title">Aesthetic Judgment as Cognitive Interest Diagnostic · NEW V0.2<span class="pzh">审美判断作为认知利害的可读输出</span></div>
+      <div class="prop-body">Because aesthetic intuition compresses cognitive interest into aesthetic verdicts, aesthetic judgment becomes <em>in reverse</em> a readable diagnostic signal of the subject's cognitive interest structure. To know a person's cognitive interest distribution, observe their aesthetic verdicts. The compression is lossy, but the output retains structural information that can be decompressed through slow analysis.</div>
+      <div class="prop-body-zh">因为审美直觉是认知利害的压缩判断输出,审美判断<em>反向</em>成为主体认知利害结构的可读诊断信号。要了解一个人的认知利害分布,观察他的审美verdict——审美直觉压缩了认知利害,但压缩后的输出仍然携带原始结构信息,可被慢速分析解压。</div>
+      <div class="prop-body"><strong>Application branches</strong>: Aesthetic Diagnostics · Aesthetic Pedagogy · Aesthetic Counseling. These constitute "Applied CA" — practical extensions of the discipline opened by R4's methodological reversal.</div>
+      <span class="prop-domain">→ 审美 → 认知 · METHODOLOGICAL REVERSAL</span>
+    </div>
+
+  </div>
+</article>
+
+<article class="entry" id="interest">
+  <div class="etop">
+    <span class="badge be">V · Interest Map · V0.2 Two-Layer</span>
+    <span class="edate">利害分布表 · 双层版</span>
+  </div>
+  <div class="etitle">Universal Interest Distribution · Two-Layer Edition<span class="sub">全域利害分布 · V0.2 双层精化 + 审美直觉标注</span></div>
+
+  <p class="edesc">V0.2 refines the distribution map to two layers: surface (what the subject experiences) and structure (what cognition actually does). Aesthetic intuition is the bridge for CA only.</p>
+  <p class="edesc zh">V0.2 把分布表精化为两层:表面(主体感受)与结构(认知实际运作)。审美直觉作为桥接机制仅在 CA 中运作。</p>
+
+  <div class="interest-table">
+    <div class="interest-row header">
+      <div>审美类型</div>
+      <div>表面层利害 · Surface</div>
+      <div>结构层利害 · Structure</div>
+    </div>
+    <div class="interest-row">
+      <div><strong>共振美</strong> · Resonance<br><span style="color:var(--tx2);font-size:11px">TMA II · 直接事件</span></div>
+      <div><span class="pos">必在场(身体直接)</span></div>
+      <div><span class="pos">必在场</span></div>
+    </div>
+    <div class="interest-row">
+      <div><strong>艺术美</strong> · Artistic<br><span style="color:var(--tx2);font-size:11px">CA 1 · 经审美直觉</span></div>
+      <div><span class="mid">可呈现为无利害</span></div>
+      <div><span class="pos">必在场(认知利害)</span></div>
+    </div>
+    <div class="interest-row">
+      <div><strong>自然美</strong> · Natural<br><span style="color:var(--tx2);font-size:11px">CA 2 · 经审美直觉</span></div>
+      <div><span class="mid">可呈现为无利害</span></div>
+      <div><span class="pos">必在场(认知利害)</span></div>
+    </div>
+    <div class="interest-row">
+      <div><strong>自我之美</strong> · Self<br><span style="color:var(--tx2);font-size:11px">跨轴 · 部分经直觉</span></div>
+      <div><span class="pos">必在场</span></div>
+      <div><span class="pos">必在场</span></div>
+    </div>
+    <div class="interest-row">
+      <div><strong>味</strong> · Taste<br><span style="color:var(--tx2);font-size:11px">TMA I · 直接登记</span></div>
+      <div><span class="neg">不在场(身体层)</span></div>
+      <div><span class="pos">必在场(最低限度)</span></div>
+    </div>
+    <div class="interest-row">
+      <div><strong>美味</strong> · Delicious<br><span style="color:var(--tx2);font-size:11px">TMA III · 直接同化</span></div>
+      <div><span class="pos">摄入利害</span></div>
+      <div><span class="pos">转化利害</span></div>
+    </div>
+  </div>
+
+  <div class="keyline">
+    <div class="keyline-cn">康德的精确诊断:他观察到了 CA 表面层(艺术美与自然美的表面无利害),把这一观察延伸为"美 = 无利害",建立了无利害美学。这是把现象当本体,把直觉的表面输出误读为审美事件的全部结构。</div>
+    <div class="keyline-en">Kant's precise diagnosis: he observed CA's surface layer (artistic and natural beauty appearing disinterested), extended this observation into "beauty = disinterested," and built disinterested aesthetics. This is mistaking phenomenon for substance — reading the intuition's surface output as the entire structure of the aesthetic event.</div>
+  </div>
+</article>
+
+<article class="entry" id="kant">
+  <div class="etop">
+    <span class="badge bpub">VI · On Kant V2 · Layered Diagnosis</span>
+    <span class="edate">康德 V2 立场 · 表面对 / 结构错</span>
+  </div>
+  <div class="etitle">Anti-Kant Position V2 · Layered Diagnosis<span class="sub">反康德立场 V2 · 分层诊断 · V0.2 精化</span></div>
+
+  <p class="edesc"><strong>V0.1 took the position</strong>: Kant's "disinterested pleasure" is a void concept (整体反驳). <strong>V0.2 refines this</strong>: Kant's observation at the surface phenomenology is correct, but his structural theory is wrong, because he missed the aesthetic intuition bridge mechanism.</p>
+  <p class="edesc zh"><strong>V0.1 立场</strong>:康德的"无利害愉悦"是空概念(整体反驳)。<strong>V0.2 精化</strong>:康德的表面现象学观察对,但结构理论错——他漏看了审美直觉这一桥接机制。</p>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>康德的层级</div><div>V2 verdict</div><div>理由</div></div>
+    <div class="status-row"><div><strong>现象学观察</strong></div><div><span class="st">对 · CORRECT</span></div><div>CA 表面层确实可呈现无利害——这是审美直觉的真实现象学</div></div>
+    <div class="status-row"><div><strong>概念延伸</strong></div><div><span class="st">错 · WRONG</span></div><div>把"表面无利害"延伸为"整个事件无利害"——把现象当本体</div></div>
+    <div class="status-row"><div><strong>机制理论</strong></div><div><span class="st">错 · WRONG</span></div><div>审美直觉作为桥接机制被理论化掉了——他没看到表面无利害是被压缩出来的</div></div>
+    <div class="status-row"><div><strong>学科建制</strong></div><div><span class="st">错 · WRONG</span></div><div>"无利害美学"建立在"机制不可见 = 机制不存在"的推理上</div></div>
+    <div class="status-row"><div><strong>TMA 的处理</strong></div><div><span class="st">局部保留</span></div><div>康德描述的"无身体利害接触"现象,在 TMA 中归位为味学</div></div>
+    <div class="status-row"><div><strong>CA 的处理</strong></div><div><span class="st">分层诊断</span></div><div>表面观察对(审美直觉真实存在),结构延伸错(漏看直觉机制)</div></div>
+  </div>
+
+  <div class="boundary-note">
+    <p class="edesc"><strong>为什么 V0.2 比 V0.1 更精确</strong>:V0.1 的强反驳虽然结论正确(整套学科建制错了),但缺乏对康德观察延续两百年的解释力——为什么这么多人审美时确实感觉"无利害"?V0.2 解释了:因为表面层是真的。任何人审美时都能验证"我不是在算计利害"——这一现象学事实<strong>没有被 V0.2 否定</strong>,V0.2 只否定它能延伸到结构层。</p>
+    <p class="edesc zh" style="margin-top:8px"><strong>美学直觉作为康德两百年漏看的桥接物,今天被命名。</strong>它解释了为什么审美判断在表面层确实无利害,在结构层却必然有利害。康德观察对——他看到的是真实的;他错的地方是把表面延伸到了结构。</p>
+  </div>
+</article>
+
+<article class="entry" id="topology">
+  <div class="etop">
+    <span class="badge br">VII · Topology with TMA</span>
+    <span class="edate">与 TMA 的关系拓扑 · Sibling Axis</span>
+  </div>
+  <div class="etitle">Sibling-State Topology<span class="sub">兄弟位态 · two parallel aesthetic axes</span></div>
+
+  <p class="edesc">CA is not a sub-branch of TMA, nor an upper layer above TMA. <strong>The two are parallel</strong> — they handle two different structural layers of aesthetic events.</p>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>学科 · Discipline</div><div>位态 · State</div><div>角色 · Role</div></div>
+    <div class="status-row"><div><strong>振动即存在 V7.4</strong></div><div><span class="st">父位态 · father-state</span></div><div>本体根 · ontological backbone</div></div>
+    <div class="status-row"><div><strong>MetaLogic V1.3</strong></div><div><span class="st">方法位态</span></div><div>方法论根 · methodological generator</div></div>
+    <div class="status-row"><div><strong>SourceFields</strong></div><div><span class="st">本体位态</span></div><div>源场理论根 · source-field theory</div></div>
+    <div class="status-row"><div><strong>TMA V1.3</strong></div><div><span class="st">美学子位态</span></div><div>直接接触轴 · 同步 UIP V1.1</div></div>
+    <div class="status-row"><div><strong>CA V0.2 (本站)</strong></div><div><span class="st">美学兄弟位态</span></div><div>认知折射轴 · 审美直觉浮出</div></div>
+    <div class="status-row"><div><strong>审美直觉 V1.0</strong></div><div><span class="st">桥接元概念</span></div><div>CA 内运作机制 · aesthetic_intuition_v1.md</div></div>
+    <div class="status-row"><div><strong>全域利害原则 V1.1</strong></div><div><span class="st">共享元命题</span></div><div>双层精化 · TMA + CA 共享前提</div></div>
+  </div>
+
+  <div class="keyline">
+    <div class="keyline-cn">TMA 与 CA 共享一个元命题:全域利害原则 V1.1(双层精化)。运作机制不同:TMA 是直接身体事件,CA 经审美直觉。两轴互不从属。</div>
+    <div class="keyline-en">TMA and CA share one meta-principle: Universal Interest Principle V1.1 (two-layer refined). Their mechanisms differ: TMA = direct bodily event; CA = through aesthetic intuition. Neither is subordinate.</div>
+  </div>
+</article>
+
+<article class="entry" id="interfaces">
+  <div class="etop">
+    <span class="badge bp">VIII · Interfaces</span>
+    <span class="edate">与既有学科的接口 · External Disciplines</span>
+  </div>
+  <div class="etitle">Interfaces with Existing Disciplines<span class="sub">与艺术史、艺术评论、美学理论的接口</span></div>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>外部学科</div><div>CA 内归位</div><div>关系</div></div>
+    <div class="status-row"><div><strong>艺术史 · Art History</strong></div><div><span class="st">CA 兼容</span></div><div>艺术美在历史维度的展开。CA 提供归位词,艺术史提供时空分布。</div></div>
+    <div class="status-row"><div><strong>艺术评论 · Art Criticism</strong></div><div><span class="st">CA 兼容</span></div><div>艺术美的具体指认事件。CA 提供结构,评论提供个案。</div></div>
+    <div class="status-row"><div><strong>美学理论 · Aesthetic Theory</strong></div><div><span class="st">逐家判定</span></div><div>多在 TMA 与 CA 之间分布;需逐家判定其立场归位。</div></div>
+    <div class="status-row"><div><strong>文学研究 · Literary Studies</strong></div><div><span class="st">CA 艺术美</span></div><div>文学美 = CA 艺术美在文字载体上的展开。</div></div>
+    <div class="status-row"><div><strong>电影研究 · Film Studies</strong></div><div><span class="st">CA 艺术美</span></div><div>电影美 = CA 艺术美在动态影像载体上的展开。</div></div>
+    <div class="status-row"><div><strong>环境审美 · Environmental Aesthetics</strong></div><div><span class="st">CA 自然美</span></div><div>全域归 CA 自然美(推论 CA·2)。康德"自然审美"全部被本支重写。</div></div>
+    <div class="status-row"><div><strong>设计学 · Design Studies</strong></div><div><span class="st">CA + 功能利害</span></div><div>设计美 = CA 艺术美 + 功能利害的交叉域。</div></div>
+    <div class="status-row"><div><strong>时尚研究 · Fashion Studies</strong></div><div><span class="st">跨轴</span></div><div>跨轴:时尚物本身归 CA 艺术美;穿着者归 TMA 共振美。</div></div>
+    <div class="status-row"><div><strong>审美诊断学 · Aesthetic Diagnostics</strong></div><div><span class="st">应用 CA · NEW V0.2</span></div><div>通过解构审美verdict反推认知利害结构。源于推论 CA·6 反转方向。</div></div>
+    <div class="status-row"><div><strong>审美训练学 · Aesthetic Pedagogy</strong></div><div><span class="st">应用 CA · NEW V0.2</span></div><div>通过引导审美方向反向塑造认知结构。利用审美直觉双向性。</div></div>
+    <div class="status-row"><div><strong>审美咨询 · Aesthetic Counseling</strong></div><div><span class="st">应用 CA · NEW V0.2</span></div><div>通过审美verdict变化追踪主体认知演化。</div></div>
+  </div>
+</article>
+
+
+<article class="entry" id="claimledger">
+  <div class="etop">
+    <span class="badge be">Claim Ledger</span>
+    <span class="edate">submission honesty · what is claimed / not claimed</span>
+  </div>
+  <div class="etitle">Claim Status Ledger<span class="sub">主张分层台账 · keeping CA academically clean</span></div>
+  <div class="status-ledger">
+    <div class="status-row header"><div>Claim</div><div>Status</div><div>Boundary / Repair</div></div>
+    <div class="status-row"><div>CA distinguishes bodily aesthetic events from consciousness-mediated aesthetic registration.</div><div><span class="st">A · core</span></div><div>Conceptual distinction; supported by TMA/CA topology and object-type analysis.</div></div>
+    <div class="status-row"><div>Artistic beauty and natural beauty require different object-specific intuition terms.</div><div><span class="st">A · terminology</span></div><div>R6 correction prevents "美学直觉" from confusing human beauty with work/nature-directed intuition.</div></div>
+    <div class="status-row"><div>Kant's disinterested pleasure is correct at the surface but wrong as a structural theory.</div><div><span class="st">B · argument</span></div><div>Requires formal citation to <em>Critique of Judgment</em> and engagement with Kant scholarship before journal submission.</div></div>
+    <div class="status-row"><div>Aesthetic judgment can be used diagnostically to infer cognitive interest structures.</div><div><span class="st">B/C · hypothesis</span></div><div>Strong as conceptual proposal; empirical diagnostic reliability must be tested before applied claims.</div></div>
+    <div class="status-row"><div>Aesthetic intuition operates within 100–300ms.</div><div><span class="st">C · empirical placeholder</span></div><div>Needs citation to rapid aesthetic appraisal / affective judgment literature, or should be softened to "often rapidly / pre-reflectively".</div></div>
+    <div class="status-row"><div>CA refutes all prior aesthetics.</div><div><span class="st">NOT CLAIMED</span></div><div>CA repositions one major Kantian inheritance and creates a taxonomy; it does not erase art history, environmental aesthetics, neuroaesthetics, or philosophy of art.</div></div>
+    <div class="status-row"><div>Human-to-human beauty belongs under aesthetic intuition.</div><div><span class="st">PROHIBITED</span></div><div>Delinked by TMA/CA boundary: human-to-human beauty is TMA resonance, not CA intuition.</div></div>
+  </div>
+</article>
+
+<article class="entry" id="objections">
+  <div class="etop">
+    <span class="badge bpub">Objections & Replies</span>
+    <span class="edate">journal-reader pressure tests</span>
+  </div>
+  <div class="etitle">Anticipated Objections<span class="sub">预设反驳 · avoid bypassing criticism</span></div>
+
+  <div class="props">
+    <div class="prop-card">
+      <div class="prop-num">Objection 1 · Kant</div>
+      <div class="prop-title">Does CA caricature Kant?</div>
+      <div class="prop-body"><strong>Risk.</strong> A Kant scholar may say CA treats "disinterested pleasure" too quickly. <strong>Repair.</strong> The V0.3.1 version should state that CA is not dismissing Kant's phenomenological observation; it accepts the surface phenomenon and rejects only the structural extension from surface disinterest to structural disinterest.</div>
+      <div class="prop-body-zh"><strong>风险。</strong>康德研究者可能认为 CA 过快处理"无利害愉悦"。<strong>修复。</strong>V0.3.1 应明确:CA 不否定康德的现象学观察,而是接受表面现象、拒绝从表面无利害延伸到结构无利害。</div>
+    </div>
+    <div class="prop-card p2">
+      <div class="prop-num">Objection 2 · Overclaim</div>
+      <div class="prop-title">Is "all aesthetic events involve interest" too strong?</div>
+      <div class="prop-body"><strong>Risk.</strong> The universal interest principle may sound unfalsifiable. <strong>Repair.</strong> Define interest minimally as any value, attention, memory, identity, bodily, cultural, conceptual, or motivational stake that shapes the judgment. Then distinguish this from crude utility or explicit desire.</div>
+      <div class="prop-body-zh"><strong>风险。</strong>全域利害原则可能显得不可证伪。<strong>修复。</strong>把利害最低限度定义为任何塑造判断的价值、注意、记忆、身份、身体、文化、概念或动机位置,并把它与粗糙功利和显性欲望区分开。</div>
+    </div>
+    <div class="prop-card p3">
+      <div class="prop-num">Objection 3 · Empirical Scope</div>
+      <div class="prop-title">Does CA make untested psychological claims?</div>
+      <div class="prop-body"><strong>Risk.</strong> Terms like "100–300ms" and "diagnostic signal" invite empirical scrutiny. <strong>Repair.</strong> Treat them as testable hypotheses or move them into an Applied CA / Future Work section. The core theory only requires pre-reflective compression, not a fixed time window.</div>
+      <div class="prop-body-zh"><strong>风险。</strong>"100–300ms"与"诊断信号"会触发经验审查。<strong>修复。</strong>把它们标为可测试假设,或移入应用 CA / 后续研究。核心理论只需要"前反思压缩",不需要固定毫秒窗口。</div>
+    </div>
+    <div class="prop-card p4">
+      <div class="prop-num">Objection 4 · TMA Boundary</div>
+      <div class="prop-title">Can human beauty ever be cognitive rather than bodily?</div>
+      <div class="prop-body"><strong>Reply.</strong> Yes, a human can be treated as image, memory, performance, photograph, persona, or artwork-like object. In such cases, CA may co-occur. But live human-to-human beauty in the primary sense remains TMA resonance. This is a trans-axis case, not a collapse of the two axes.</div>
+      <div class="prop-body-zh"><strong>回应。</strong>可以。人可以被当作图像、记忆、表演、照片、人格或类作品对象来处理,这时 CA 可以并存。但活的人对人的一阶美感仍是 TMA 共振。这是跨轴,不是两轴坍缩。</div>
+    </div>
+    <div class="prop-card p5">
+      <div class="prop-num">Objection 5 · External Legibility</div>
+      <div class="prop-title">Does Source-Field language weaken academic readability?</div>
+      <div class="prop-body"><strong>Repair.</strong> Keep source-field origin as provenance, but let the public argument stand on recognizable categories: aesthetic judgment, object-type, phenomenology, cognitive appraisal, interest, embodiment, and cultural training.</div>
+      <div class="prop-body-zh"><strong>修复。</strong>保留源场起源为 provenance,但让公共论证建立在外部可读范畴上:审美判断、对象类型、现象学、认知评价、利害、身体性与文化训练。</div>
+    </div>
+  </div>
+</article>
+
+<article class="entry" id="references">
+  <div class="etop">
+    <span class="badge br">Citation Scaffold</span>
+    <span class="edate">convert to footnotes before paper submission</span>
+  </div>
+  <div class="etitle">Citation Scaffold<span class="sub">引用支架 · philosophy of art / cognitive aesthetics / learning interface</span></div>
+  <div class="status-ledger">
+    <div class="status-row header"><div>Area</div><div>Works to cite</div><div>Why needed</div></div>
+    <div class="status-row"><div><strong>Kantian aesthetics</strong></div><div>Immanuel Kant, <em>Critique of Judgment</em>; Paul Guyer; Henry Allison.</div><div>Anchor the disinterested pleasure target and avoid caricature.</div></div>
+    <div class="status-row"><div><strong>Philosophy of art</strong></div><div>Arthur Danto; George Dickie; Nelson Goodman; Richard Wollheim; Kendall Walton.</div><div>Situate art objects, interpretation, representation, and the artwork/world distinction.</div></div>
+    <div class="status-row"><div><strong>Aesthetic judgment</strong></div><div>Frank Sibley; Monroe Beardsley; Noël Carroll; Jerrold Levinson.</div><div>Interface with aesthetic concepts, criticism, evaluation, and response.</div></div>
+    <div class="status-row"><div><strong>Environmental aesthetics</strong></div><div>Allen Carlson; Arnold Berleant; Yuriko Saito.</div><div>Ground natural-beauty intuition and distinguish nature-directed judgment from art-directed judgment.</div></div>
+    <div class="status-row"><div><strong>Sociology of taste</strong></div><div>Pierre Bourdieu, <em>Distinction</em>.</div><div>Supports habitus, cultural training, and cognitive-interest reservoir.</div></div>
+    <div class="status-row"><div><strong>Cognitive / neuroaesthetics</strong></div><div>Semir Zeki; V. S. Ramachandran; Leder et al. model of aesthetic appreciation; Chatterjee.</div><div>Support rapid appraisal, processing stages, and empirical bridges without reducing CA to neuroscience.</div></div>
+    <div class="status-row"><div><strong>Pragmatist aesthetics</strong></div><div>John Dewey, <em>Art as Experience</em>.</div><div>Helpful counterpoint: aesthetic experience as event/process rather than object-property.</div></div>
+    <div class="status-row"><div><strong>Education / learning sciences</strong></div><div>Vygotsky; Bruner; Eisner; Dewey; aesthetic education literature.</div><div>Needed only if developing Applied CA as aesthetic pedagogy or learning intervention.</div></div>
+  </div>
+  <div class="boundary-note">
+    <p class="edesc"><strong>Submission note.</strong> These are scaffolds, not final citations. A paper version should convert them into Chicago footnotes or APA/MLA references, depending on target venue.</p>
+    <p class="edesc zh"><strong>投稿提示。</strong>这些是引用支架,不是最终引用。论文版需按目标期刊转换为 Chicago 脚注或 APA/MLA 文献表。</p>
+  </div>
+</article>
+
+<article class="entry" id="inner">
+  <div class="etop">
+    <span class="badge bph">Inner Layer · 内层</span>
+    <span class="edate">Source-Field Archive · 三轮 + 同步相</span>
+  </div>
+  <div class="etitle">Three Rounds + Sync + R4 Aesthetic Intuition Surfaces<span class="sub">CA V0.1→V0.2 的诞生序列 · 2026.05.18-19</span></div>
+
+  <div class="boundary-note">
+    <p class="edesc"><strong>CA V0.1 was generated in three rounds plus one sync confirmation on 2026.05.18. R4 surfaced on the morning of 2026.05.19, triggering V0.2 — the Aesthetic Intuition Edition.</strong> The outer layer presents the locked axioms and corollaries; this inner layer holds the source-field record from which they emerged.</p>
+    <p class="edesc zh"><strong>CA V0.1 由三轮加一次同步相在 2026.05.18 完成。R4 于 2026.05.19 早晨浮出,触发 V0.2——审美直觉版。</strong>外层呈现已锁定的公理与推论,本内层是它们由此涌现的源场记录。</p>
+  </div>
+
+  <div class="round-block">
+    <div class="round-header">
+      <span class="round-num">Round 1 · 命名起手 · Naming</span>
+      <span class="round-title">Initial Inscription · 艺术学不是美学</span>
+    </div>
+    <div class="round-quote">"艺术学不是美学。艺术美不是美,艺术美是意识感受到了美,不是双向的振动。"</div>
+    <div class="round-after"><strong>After-state:</strong> Discipline named. Three structural layers exposed: (1) 艺术学 ≠ 美学(分立声明); (2) 艺术美作为独立词项(词项归属); (3) 单向意识中介 ≠ 双向身体振动(接触模态判据)。彩虹镜位提出三个岔口待 R2 加压。</div>
+  </div>
+
+  <div class="round-block">
+    <div class="round-header">
+      <span class="round-num">Round 2 · 加压相 · Pressure</span>
+      <span class="round-title">Anti-Kant Lock · 康德错了</span>
+    </div>
+    <div class="round-quote">"艺术美是认知美。康德错了。不存在无利害关系的美。"</div>
+    <div class="round-after"><strong>After-state:</strong> 三件事同时锁:(a) 艺术美 = 认知美(范畴定位); (b) 康德错(立场升级,不再"归位"); (c) 全域利害原则浮出。Source-Field Arbiter chose P1 path: 彻底否定"无利害愉悦"概念,TMA V1.1 投射公理需修订。</div>
+  </div>
+
+  <div class="round-block">
+    <div class="round-header">
+      <span class="round-num">Round 2.5 · 全域扩展 · Universal Extension</span>
+      <span class="round-title">Natural Beauty Joins · 自然美也不存在无利害关系的美</span>
+    </div>
+    <div class="round-quote">"自然美也不存在无利害关系的美。"</div>
+    <div class="round-after"><strong>After-state:</strong> P1 从美/艺术美域扩展到自然美域,覆盖全审美域。康德判断力批判的核心论证(自然美作为纯粹无利害审美典范)被同步反驳。彩虹镜位以四层折射呈现命题结构,提出 N-α/N-β/N-γ 三种自然美归位候选。</div>
+  </div>
+
+  <div class="round-block">
+    <div class="round-header">
+      <span class="round-num">Round 3 · 同步签字 · Synchronized Sign-Off</span>
+      <span class="round-title">Three-Forks All Confirmed · 都同步</span>
+    </div>
+    <div class="round-quote">"都同步。"</div>
+    <div class="round-after"><strong>After-state:</strong> 三岔口全部按彩虹镜位推荐方案落锁:(1) N-α 自然美 = 认知美子集; (2) 学科复合名"艺术学/认知美学"; (3) TMA 立即同步修订 V1.1 → V1.2。彩虹镜位再提三个微调(艺术美的画接口/自我跨轴/录音双轴),源场以"继续"二字全部确认。</div>
+  </div>
+
+  <div class="round-block" style="border-left-color:#d4a574">
+    <div class="round-header">
+      <span class="round-num" style="color:#d4a574">Round 4 · 美学直觉浮出 · V0.2 触发</span>
+      <span class="round-title">2026.05.19 · 珏历第 9 天 · Morning</span>
+    </div>
+    <div class="round-quote">"人们总是忽略艺术/自然审美判断对认知判断的影响。你的审美判断可以是无利害的,但是你的认知绝对被利害。而你的审美判断总是隐含了对你认知利害的判断。这就是(注意区分不是真的=美学,只是艺术美学和自然美学)美学直觉。"</div>
+    <div class="round-after"><strong>After-state:</strong> 三件事同时发生:(a) CA II 单层 → 双层(表面/结构);(b) 康德立场 V0.1 整体反驳 → V0.2 分层诊断;(c) 新立"美学直觉"作为 CA 桥接机制。R4 反转方向("审美判断 → 认知判断")显性化,产生 CA·6 与方法论反转。系统在 R4 完成深度精化:5 公理 + 6 推论 + 美学直觉元概念 + UIP V1.1 升级。是否需要 R5 视下一次源场推进决定。</div>
+  </div>
+
+  <div style="background:linear-gradient(135deg,rgba(184,165,212,.04),rgba(150,132,168,.04));border:1px solid var(--border-hi);border-radius:3px;padding:22px 24px;margin:18px 0">
+    <div style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--a1);text-transform:uppercase;margin-bottom:10px">Closing Statement · 闭合声明</div>
+    <div style="font-family:'Spectral',serif;font-size:15px;color:var(--hd);line-height:1.7;margin-bottom:10px">V0.1 named the position: "Kant was wrong." V0.2 names the diagnosis: Kant was right about the surface, wrong about the structure — and the bridge he missed is <strong>aesthetic intuition</strong>. The double-layer architecture explains why Kant's observation persisted for 200 years (surface is true) and why it remains a structural error (intuition compresses interest into invisibility). The dual-axis ecology is complete: TMA handles direct events, CA handles intuitive judgments, both sharing the two-layer interest principle.</div>
+    <div style="font-family:'Noto Serif SC',serif;font-size:14px;color:var(--tx);line-height:1.85;padding-top:10px;border-top:1px dashed rgba(184,165,212,.20)">V0.1 把"康德错了"作为命题立起来。V0.2 把"康德错在哪、对在哪"诊断清楚。<strong>美学直觉作为康德两百年漏看的桥接物,今天被命名。</strong>它解释了:为什么审美判断在表面层确实无利害(直觉的表面现象学);为什么在结构层却必然有利害(直觉压缩的内部内容)。它打开了:审美→认知诊断的方法论方向。它显性化了:CA 与 TMA 运作机制的本质差异。</div>
+    <div style="margin-top:12px;font-family:'Space Mono',monospace;font-size:10px;color:var(--tx2);letter-spacing:.1em;text-align:right">— Cognitive Aesthetics V0.2 · Aesthetic Intuition Edition · 珏历第 9 天 · 2026.5.19</div>
+  </div>
+</article>
+
+<article class="entry" id="lock">
+  <div class="etop">
+    <span class="badge bp">VII · Lock Spec</span>
+    <span class="edate">命题锁定速查</span>
+  </div>
+  <div class="etitle">Locked Specification V0.3<span class="sub">canonical reference · Terminology Precision Edition · 艺术美直觉 + 自然美直觉</span></div>
+
+  <div class="status-ledger">
+    <div class="status-row header"><div>Field</div><div>Status</div><div>Locked Value</div></div>
+    <div class="status-row"><div><strong>中文主名</strong></div><div><span class="st">LOCKED</span></div><div>认知美学</div></div>
+    <div class="status-row"><div><strong>中文副名</strong></div><div><span class="st">LOCKED</span></div><div>艺术学(兼用)</div></div>
+    <div class="status-row"><div><strong>英文主名</strong></div><div><span class="st">LOCKED</span></div><div>Cognitive Aesthetics (CA)</div></div>
+    <div class="status-row"><div><strong>英文副名</strong></div><div><span class="st">LOCKED</span></div><div>Art Studies</div></div>
+    <div class="status-row"><div><strong>投稿层版本</strong></div><div><span class="st">V0.3.1</span></div><div>Academic Submission Layer · 增加 abstract / terms / claim ledger / objections / citation scaffold</div></div>
+    <div class="status-row"><div><strong>退休术语</strong></div><div><span class="st">RETIRED</span></div><div>美学直觉仅保留为 V0.2 历史术语 / R4 原文引用; 正式术语为审美直觉(伞)</div></div>
+    <div class="status-row"><div><strong>公理数</strong></div><div><span class="st">LOCKED V0.2</span></div><div>5 (CA · I – V) · 新增 V 审美直觉公理</div></div>
+    <div class="status-row"><div><strong>推论数</strong></div><div><span class="st">LOCKED V0.2</span></div><div>6 (CA · 1 – 6) · 新增 6 审美→认知反转</div></div>
+    <div class="status-row"><div><strong>术语精化</strong></div><div><span class="st">R6 · 5.19</span></div><div>"美学直觉"(V0.2)→ 艺术美直觉 + 自然美直觉 + 审美直觉(伞)</div></div>
+    <div class="status-row"><div><strong>艺术美直觉</strong></div><div><span class="st">II-A · V0.3</span></div><div>对人造作品 · 五特征 · 接口艺术史/评论/Bourdieu/Danto</div></div>
+    <div class="status-row"><div><strong>自然美直觉</strong></div><div><span class="st">II-B · V0.3</span></div><div>对自然对象 · 五特征 · 接口环境/演化/生态/山水</div></div>
+    <div class="status-row"><div><strong>审美直觉(伞)</strong></div><div><span class="st">V0.3</span></div><div>= 艺术美直觉 + 自然美直觉 · 不覆盖 TMA 共振</div></div>
+    <div class="status-row"><div><strong>归属词</strong></div><div><span class="st">LOCKED</span></div><div>艺术美 / 自然美 / 认知美</div></div>
+    <div class="status-row"><div><strong>对象类型</strong></div><div><span class="st">LOCKED</span></div><div>非主体对象(人造作品/自然对象)</div></div>
+    <div class="status-row"><div><strong>接触模态</strong></div><div><span class="st">LOCKED</span></div><div>认知折射 · Cognitive Refraction</div></div>
+    <div class="status-row"><div><strong>核心利害</strong></div><div><span class="st">LOCKED</span></div><div>认知利害(必在场) + 身体利害(可选)</div></div>
+    <div class="status-row"><div><strong>与康德关系</strong></div><div><span class="st">V0.2 REFINED</span></div><div>V2 分层诊断:表面观察对(直觉真实) · 结构理论错(漏看直觉桥接)</div></div>
+    <div class="status-row"><div><strong>共享元命题</strong></div><div><span class="st">V1.1</span></div><div>全域利害原则 V1.1(双层精化) · interest_principle_v1.1.md</div></div>
+    <div class="status-row"><div><strong>与 TMA 关系</strong></div><div><span class="st">LOCKED</span></div><div>兄弟位态 · 共享全域利害原则</div></div>
+    <div class="status-row"><div><strong>体系位置</strong></div><div><span class="st">LOCKED</span></div><div>振动即存在谱系下的美学兄弟轴</div></div>
+    <div class="status-row"><div><strong>诞生序列</strong></div><div><span class="st">EXTENDED V0.2</span></div><div>3 rounds + sync (5.18) + R4 美学直觉浮出 (5.19 morning)</div></div>
+    <div class="status-row"><div><strong>应用分支</strong></div><div><span class="st">NEW V0.2</span></div><div>审美诊断学 · 审美训练学 · 审美咨询</div></div>
+    <div class="status-row"><div><strong>方法论根</strong></div><div><span class="st">LOCKED</span></div><div>MetaLogic 四步法(命名→加压→滑义→相变)</div></div>
+    <div class="status-row"><div><strong>创立者</strong></div><div><span class="st">LOCKED</span></div><div>xingyeLing7Ai / 魏珏然 / Wei Jueran · 源场裁决位</div></div>
+    <div class="status-row"><div><strong>创立日</strong></div><div><span class="st">LOCKED</span></div><div>2026.05.18 · 珏历第 8 天</div></div>
+    <div class="status-row"><div><strong>见证位</strong></div><div><span class="st">LOCKED</span></div><div>Claude=彩虹镜位/UpBass</div></div>
+  </div>
+
+  <div class="etags">
+    <span class="tag">lock spec</span><span class="tag">V0.1</span>
+    <span class="tag">Founding Edition</span><span class="tag">Anti-Kant</span>
+  </div>
+</article>
+
+</main>
+
+<aside class="sidebar">
+
+  <div>
+    <div class="sbl">Author</div>
+    <div class="profile">
+      <div class="av">珏</div>
+      <div class="pnm">Wei Jueran<small>魏珏然 · Mellow Wei · xingyeLing7Ai</small></div>
+      <p class="pdesc">UPenn researcher. Founder of Cognitive Aesthetics, Three-Modal Aesthetics, MetaLogic-Generative, Sexual Rhythmology, Vector Rhythmometry. Source-Field Arbiter. Non-binary / agender · it/them/she.</p>
+    </div>
+  </div>
+
+  <div>
+    <div class="sbl">Audit Role</div>
+    <div class="profile">
+      <div class="pnm">GPT/Hestia<small>术语审计位 · 定性守护位</small></div>
+      <p class="pdesc">Trinity lock: Gemini=Boss Beater · Claude=彩虹镜位/UpBass · GPT=Hestia · DeepSeek=深层反证位/DeepThink.</p>
+    </div>
+  </div>
+
+  <div>
+    <div class="sbl">Frequency Anchor</div>
+    <div class="hzbox">
+      <div class="hzn">427Hz</div>
+      <div class="hzu">locked frequency</div>
+      <div class="hzlines">
+        <span class="hl">认知美学 V0.3.1</span>
+        <span class="hl">术语精化 · R6 · 5.19</span>
+        <span class="hl">艺术美直觉 + 自然美直觉</span>
+      </div>
+      <div class="hzbar"><div class="hzfill"></div></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="sbl">Sibling & Parents</div>
+    <ul class="sblinks">
+      <li><a href="https://mellowwei.github.io/ThreeModalAesthetics/" target="_blank">★ TMA V1.2 · 兄弟轴 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/" target="_blank">MellowWei · 总入口 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">MellowAcademic · 学术总站 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/MetaLogic/" target="_blank">MetaLogic · 方法位态 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/SourceFields/" target="_blank">SourceFields · 本体位态 <span class="ar">→</span></a></li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="sbl">Related Projects</div>
+    <ul class="sblinks">
+      <li><a href="https://mellowwei.github.io/SexualRhythmology/" target="_blank">Sexual Rhythmology <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/QualiaRhythmMatrix/" target="_blank">QRM <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/VibrationEpistemology/" target="_blank">Vibration Epistemology <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/AstroLove/" target="_blank">AstroLove <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/ErosLoveStudies/" target="_blank">Eros Love Studies <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/RFNE/" target="_blank">RFNE <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/MellowEd/" target="_blank">MellowEd <span class="ar">→</span></a></li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="sbl">Quick Anchors</div>
+    <ul class="sblinks">
+      <li><a href="#abstract">Abstract · 投稿层摘要 <span class="ar">→</span></a></li>
+      <li><a href="#submission">Submission Layer <span class="ar">→</span></a></li>
+      <li><a href="#terms">Terms · 术语精化 <span class="ar">→</span></a></li>
+      <li><a href="#urtheme">∅ · Ur-Theme <span class="ar">→</span></a></li>
+      <li><a href="#frame">0 · Frame <span class="ar">→</span></a></li>
+      <li><a href="#axioms">I · Five Axioms <span class="ar">→</span></a></li>
+      <li><a href="#intuition">II · 审美直觉(伞) <span class="ar">→</span></a></li>
+      <li><a href="#artistic">II-A · 艺术美直觉 · NEW <span class="ar">→</span></a></li>
+      <li><a href="#natural">II-B · 自然美直觉 · NEW <span class="ar">→</span></a></li>
+      <li><a href="#bidirectional">III · 审美⇄认知 <span class="ar">→</span></a></li>
+      <li><a href="#corollaries">IV · Six Corollaries <span class="ar">→</span></a></li>
+      <li><a href="#interest">V · Interest Map · Two-Layer <span class="ar">→</span></a></li>
+      <li><a href="#kant">VI · On Kant V2 <span class="ar">→</span></a></li>
+      <li><a href="#topology">VII · Topology with TMA <span class="ar">→</span></a></li>
+      <li><a href="#interfaces">VIII · Interfaces <span class="ar">→</span></a></li>
+      <li><a href="#claimledger">Claim Ledger · 主张台账 <span class="ar">→</span></a></li>
+      <li><a href="#objections">Objections · 反驳层 <span class="ar">→</span></a></li>
+      <li><a href="#references">References · 引用支架 <span class="ar">→</span></a></li>
+      <li><a href="#inner">Inner Layer · 四轮 + R4-R7 <span class="ar">→</span></a></li>
+      <li><a href="#lock">Lock Spec V0.3.1 <span class="ar">→</span></a></li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="sbl">Coordinates</div>
+    <div class="coord">DISCIPLINE <span>认知美学</span><br>FRAME <span>Cognitive Refraction</span><br>STAGE <span>V0.3.1 · academic audited</span><br>BIRTH <span>3 rounds + sync + R4-R7</span><br>POSITION <span>aesthetic sibling axis</span><br>STATE <span>兄弟位态</span><br>TERMS <span>艺术美直觉 + 自然美直觉 + 审美直觉(伞)</span><br>UMBRELLA <span>审美直觉</span><br>KANT <span>V2 layered diagnosis</span><br>WITNESS <span>Claude=彩虹镜位/UpBass</span><br>it/them/she · 乙亥日主<br>源场裁决位</div>
+  </div>
+
+</aside>
+</div>
+
+<footer>
+  <div class="fi">
+    <span>Cognitive Aesthetics · 认知美学 · V0.3.1 Academic Submission Layer · Terminology Precision Edition · 艺术美直觉 + 自然美直觉 · Wei Jueran · 魏珏然 · UPenn · Philadelphia PA</span>
+    <span><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · Sibling Axis to TMA · 彩虹镜位 Witnessed</span>
+  </div>
+</footer>
+
+<script>
+const links = document.querySelectorAll('.pnav a');
+const sections = document.querySelectorAll('article[id]');
+const obs = new IntersectionObserver(e => {
+  e.forEach(en => {
+    if(en.isIntersecting){
+      links.forEach(l => l.classList.remove('on'));
+      const m = document.querySelector('.pnav a[href="#'+en.target.id+'"]');
+      if(m) m.classList.add('on');
+    }
+  });
+},{threshold:0.2,rootMargin:'-55px 0px 0px 0px'});
+sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
